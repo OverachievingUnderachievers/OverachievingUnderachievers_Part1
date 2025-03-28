@@ -1,0 +1,49 @@
+body {
+    background-color: #23395B;
+}
+
+footer {
+    background-color: #121212;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #C4A000;
+    border-bottom: solid;
+    padding: 8px 8px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1; /* Use the rest of the available space of the <header> */
+    align-items: center;
+}
+
+header img {
+    width : 52px;
+    height: auto;
+    margin: auto;
+}
+nav a{
+    padding: 16px;
+    background-color: #191970;
+    border-bottom: 2px solid transparent;
+    color: #B8860B;
+}
+nav a:hover{
+    background-color: #A7DBA4;
+    color: #191970;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
