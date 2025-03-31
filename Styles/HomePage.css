@@ -1,16 +1,20 @@
+* {
+    color: #210203;
+}
+
 body {
-    background-color: #23395B;
+    background-color: #6D98BA;
 }
 
 footer {
-    background-color: #121212;
+    background-color: #210203;
 }
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #C4A000;
+    background-color: #C17767;
     border-bottom: solid;
     padding: 8px 8px;
 }
@@ -29,23 +33,25 @@ header img {
 }
 nav a{
     padding: 16px;
-    background-color: #191970;
+    background-color: #C17767;
     border-bottom: 2px solid transparent;
-    color: #B8860B;
+    color: #210203;
 }
 nav a:hover{
-    background-color: #A7DBA4;
-    color: #191970;
+    background-color: #210203;
+    color: #C17767;
 }
-.container {
+.ImageBoxOverlay {
     position: relative;
     text-align: center;
     color: white;
 }
-.top-left {
+.TextOverlay {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(184,134,11,0.5);
 }
 #CorperateGarbage {
     width: 80%;
