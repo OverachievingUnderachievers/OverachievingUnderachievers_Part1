@@ -1,7 +1,10 @@
 * {
-    color: white;
+    color: black;
 }
 
+h1 {
+    font-size: 30px;
+}
 body {
     background-color: whitesmoke;
 }
@@ -17,6 +20,10 @@ header{
     background-color: cornflowerblue;
     border-bottom: solid;
     padding: 8px 8px;
+    position: sticky;
+    top: 0;
+    overflow: clip;
+    z-index: 12;
 }
 
 nav {
@@ -33,6 +40,8 @@ header img {
 }
 nav a{
     padding: 16px;
+    cursor: pointer;
+    color: white;
 }
 nav a:hover{
     background-color: white;
@@ -50,16 +59,23 @@ nav a:hover{
     transform: translate(-50%, -50%);
     background-color: cornflowerblue;
 }
+.TextOverlay p,.TextOverlay h1 {
+    color: white;
+}
+
 #CorperateGarbage {
     width: 100%;
 }
-
-section {
+article {
+    color: black;
     background: cornflowerblue;
     padding: 30px;
     margin-top: -30%;
     z-index: 2;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 div {
@@ -67,4 +83,42 @@ div {
     margin: auto;
     background-color: white;
     color: black;
+}
+
+div h1, div p, div .Tagline {
+    color: black;
+}
+.Tagline {
+    font-style: italic;
+    font-size: 20px;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: white; 
+    margin-bottom: 20px;
+    
+}
+
+.LeftAlignDiv, .RightAlignDiv {
+    width: 45%;
+    padding: 20px;
+}
+
+.LeftAlignDiv img, .RightAlignDiv img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    color: black;
+    padding: 15px;
 }
