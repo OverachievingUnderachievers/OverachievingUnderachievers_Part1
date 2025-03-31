@@ -1,20 +1,20 @@
 * {
-    color: #210203;
+    color: white;
 }
 
 body {
-    background-color: #6D98BA;
+    background-color: whitesmoke;
 }
 
 footer {
-    background-color: #210203;
+    background-color: gray;
 }
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #C17767;
+    background-color: cornflowerblue;
     border-bottom: solid;
     padding: 8px 8px;
 }
@@ -33,13 +33,10 @@ header img {
 }
 nav a{
     padding: 16px;
-    background-color: #C17767;
-    border-bottom: 2px solid transparent;
-    color: #210203;
 }
 nav a:hover{
-    background-color: #210203;
-    color: #C17767;
+    background-color: white;
+    color: cornflowerblue; 
 }
 .ImageBoxOverlay {
     position: relative;
@@ -48,11 +45,26 @@ nav a:hover{
 }
 .TextOverlay {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(184,134,11,0.5);
+    background-color: cornflowerblue;
 }
 #CorperateGarbage {
-    width: 80%;
+    width: 100%;
+}
+
+section {
+    background: cornflowerblue;
+    padding: 30px;
+    margin-top: -30%;
+    z-index: 2;
+    position: relative;
+}
+
+div {
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    color: black;
 }
