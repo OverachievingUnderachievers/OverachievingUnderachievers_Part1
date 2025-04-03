@@ -1,22 +1,29 @@
 * {
-    color: #210203;
+    color: black;
 }
 
+h1 {
+    font-size: 30px;
+}
 body {
-    background-color: #6D98BA;
+    background-color: whitesmoke;
 }
 
 footer {
-    background-color: #210203;
+    background-color: gray;
 }
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #C17767;
+    background-color: cornflowerblue;
     border-bottom: solid;
     padding: 8px 8px;
+    position: sticky;
+    top: 0;
+    overflow: clip;
+    z-index: 12;
 }
 
 nav {
@@ -33,13 +40,12 @@ header img {
 }
 nav a{
     padding: 16px;
-    background-color: #C17767;
-    border-bottom: 2px solid transparent;
-    color: #210203;
+    cursor: pointer;
+    color: white;
 }
 nav a:hover{
-    background-color: #210203;
-    color: #C17767;
+    background-color: white;
+    color: cornflowerblue; 
 }
 .ImageBoxOverlay {
     position: relative;
@@ -48,11 +54,71 @@ nav a:hover{
 }
 .TextOverlay {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(184,134,11,0.5);
+    background-color: cornflowerblue;
 }
+.TextOverlay p,.TextOverlay h1 {
+    color: white;
+}
+
 #CorperateGarbage {
-    width: 80%;
+    width: 100%;
+}
+article {
+    color: black;
+    background: cornflowerblue;
+    padding: 30px;
+    margin-top: -30%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div {
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+
+div h1, div p, div .Tagline {
+    color: black;
+}
+.Tagline {
+    font-style: italic;
+    font-size: 20px;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: white; 
+    margin-bottom: 20px;
+    
+}
+
+.LeftAlignDiv, .RightAlignDiv {
+    width: 45%;
+    padding: 20px;
+}
+
+.LeftAlignDiv img, .RightAlignDiv img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    color: black;
+    padding: 15px;
 }
