@@ -10,7 +10,7 @@ body {
 }
 
 footer {
-    background-color: gray;
+    background-color: darkgray;
 }
 
 header{
@@ -18,7 +18,7 @@ header{
     flex-direction: row;
     justify-content: flex-start;
     background-color: cornflowerblue;
-    border-bottom: solid;
+    border-bottom: white solid;
     padding: 8px 8px;
     position: sticky;
     top: 0;
@@ -121,4 +121,35 @@ ul {
 li {
     color: black;
     padding: 15px;
+}
+
+.BigRedButton {
+    margin: auto;
+    padding: 30px;
+    color: white;
+    background-color: red;
+    align-self: center;
+    cursor: pointer;
+    border: 3px solid red;
+}
+.BigRedButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.ButtonHolder {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer {
+    background-color: darkgray;
+}
+
+footer section {
+}
+
+FooterRig
+
+.tailLine {
 }
