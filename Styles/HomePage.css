@@ -99,7 +99,6 @@ section {
     padding: 20px;
     background-color: white; 
     margin-bottom: 20px;
-    
 }
 
 .LeftAlignDiv, .RightAlignDiv {
@@ -147,9 +146,47 @@ footer {
 }
 
 footer section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray; 
+    margin-top: 20px;
+}
+#FooterDiv {
+    background-color: darkgray;
+}
+.ContactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: darkgray;
+}
+.ContactInfo div {
+    min-width: 220px;
+    flex-grow: 1;
+    background-color: darkgray;
+}
+.ContactInfo h4 {
+    margin-bottom: 15px;
+    color: white;
 }
 
-FooterRig
+.ContactInfo p {
+    color: white;
+}
+.ContactInfo p strong {
+    color: white;
+}
 
-.tailLine {
+.TailLine {
+    background-color: black;
+}
+.TailLine p {
+    color: white;
 }
