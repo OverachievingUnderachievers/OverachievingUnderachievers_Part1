@@ -1,0 +1,140 @@
+* {
+    font-family: Helvetica, sans-serif;
+    color: #fafafa;
+}
+
+/*-----------------------------------------------------------------------
+APPLY PAGE CSS START
+Written By: Harry Webb
+-----------------------------------------------------------------------*/
+
+.apply-body {
+    background-color: #6a89a7;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.apply-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    background: #384959;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px black;
+}
+
+.apply-main {
+    padding-inline: 40px;
+}
+
+.apply-header {
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.apply-h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: #fafafa;
+}
+
+.apply-hr {
+    border: none;
+    height: 2px;
+    background-color: #6a89a7;
+}
+
+.apply-input {
+    border-radius: 3px;
+    background-color: #fafafa;
+    color: #0b2e33;
+}
+
+.apply-button {
+    background-color: #fafafa;
+}
+
+.apply-label {
+    font-weight: bold;
+}
+
+.apply-fieldset {
+    font-weight: bold;
+}
+
+.apply-input::placeholder {
+    color: black
+}
+
+.apply-footer {
+    margin: 10px;
+    text-align: center;
+    background-color: #384959;
+}
+
+/* NAV BAR START */
+.apply-nav-header {
+    background: #384959;
+    color: #fafafa;
+    padding-top: 0%;
+    border-bottom: #fafafa 3px solid;
+    padding-bottom: 6%;
+    border-radius: 2px;
+}
+
+.apply-nav-header a {
+    color: #fafafa;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.apply-nav-header img {
+    max-width: 5%;
+    height: auto;
+    float: left;
+    padding: 4px;
+    margin: 0;
+}
+
+.apply-nav-header #logo-text h1 {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fafafa;
+    text-transform: uppercase;
+    float: left;
+    padding-top: 20px;
+    padding-left: 1%;
+}
+
+.apply-nav-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.apply-nav-header li {
+    float: left;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.apply-nav-header nav {
+    float: right;
+}
+
+.apply-nav-li a:hover {
+    color: #FFD700;
+    transition: 0.1s ease-in;
+}
+/* NAV BAR END */
+
+/*-----------------------------------------------------------------------
+APPLY PAGE CSS END
+Written By: Harry Webb
+-----------------------------------------------------------------------*/
+
