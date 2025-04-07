@@ -1,0 +1,51 @@
+body{
+    background-image: url(Screenshot\ \(111\).png);
+    
+}
+
+
+.box1{
+    float: right;
+    border: inset;
+    border-radius: 10px;
+    padding: 3px;
+    border-color: rgb(230, 229, 220);
+    margin-bottom: 1%;
+}
+.box2{
+    float: right;
+    border: inset;
+    border-radius: 10px;
+    padding: 3px;
+    border-color: rgb(237, 236, 227)
+    
+}
+.k1{
+    border: inset; border-color: rgb(225, 218, 177); padding: 5px; border-radius: 5px;
+  
+}
+.k2{
+    border: inset; border-color: rgb(223, 209, 130); padding: 5px; border-radius: 5px;
+}
+.k3{
+    border: inset; border-color: rgb(206, 190, 99); padding: 5px; border-radius: 5px;
+}
+.k4{
+    border: inset; border-color: rgb(195, 156, 41); padding: 5px; border-radius: 5px;
+}
+.s1{
+    float: right;
+    border: inset;
+    border-radius: 10px;
+    padding: 3px;
+    border-color: rgb(235, 235, 231);
+    margin-bottom: 1%;
+}
+.s2{
+    float: right;
+    border: inset;
+    border-radius: 10px;
+    padding: 3px;
+    border-color: rgb(226, 225, 219);
+    
+}
