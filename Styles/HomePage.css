@@ -1,3 +1,12 @@
+/*
+display: flex makes a line of items
+flex-direction sets the line’s direction
+flex-wrap lets the line break to new rows
+justify-content manages how items spread along the line
+align-items manages how items stack across the line
+*/
+
+
 * {
     color: black;
 }
@@ -48,6 +57,11 @@ nav a:hover{
     background-color: white;
     color: cornflowerblue; 
 }
+#Carrers:hover {
+    background-color: cornflowerblue;
+    color: white;
+    cursor:default;
+}
 .NavRight {
     margin-left: auto;
     justify-content: flex-end;
@@ -60,6 +74,7 @@ nav a:hover{
 }
 .TextOverlay {
     position: absolute;
+    padding: 16px;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -164,7 +179,7 @@ footer section {
     margin: 30px auto;
     padding: 20px;
     text-align: left;
-    color: #FFFFFF;
+    color: white;
     background-color: darkgray;
 }
 .ContactInfo div {
@@ -192,6 +207,10 @@ footer section {
 .TailLine p {
     color: white;
 }
-.MailLink {
+.Link {
     text-decoration: none;
+    color: black;
+}
+.Link:hover{
+    color: white;
 }
