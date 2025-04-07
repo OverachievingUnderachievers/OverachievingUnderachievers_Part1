@@ -1,0 +1,216 @@
+/*
+display: flex makes a line of items
+flex-direction sets the line’s direction
+flex-wrap lets the line break to new rows
+justify-content manages how items spread along the line
+align-items manages how items stack across the line
+*/
+
+
+* {
+    color: black;
+}
+
+h1 {
+    font-size: 30px;
+}
+body {
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: darkgray;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: cornflowerblue;
+    border-bottom: white solid;
+    padding: 8px 8px;
+    position: sticky;
+    top: 0;
+    overflow: clip;
+    z-index: 12;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+}
+
+header img {
+    width : 50px;
+    height: auto;
+    margin: auto;
+}
+nav a{
+    padding: 16px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: white;
+    color: cornflowerblue; 
+}
+#Carrers:hover {
+    background-color: cornflowerblue;
+    color: white;
+    cursor:default;
+}
+.NavRight {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.ImageBoxOverlay {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.TextOverlay {
+    position: absolute;
+    padding: 16px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: cornflowerblue;
+}
+.TextOverlay p,.TextOverlay h1 {
+    color: white;
+}
+
+#CorperateGarbage {
+    width: 100%;
+}
+article {
+    color: black;
+    background: cornflowerblue;
+    padding: 30px;
+    margin-top: -30%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+div h1, div p, div .Tagline {
+    color: black;
+}
+.Tagline {
+    font-style: italic;
+    font-size: 20px;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: white; 
+    margin-bottom: 20px;
+}
+
+.LeftAlignDiv, .RightAlignDiv {
+    width: 45%;
+    padding: 20px;
+}
+
+.LeftAlignDiv img, .RightAlignDiv img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    color: black;
+    padding: 15px;
+}
+
+.BigRedButton {
+    margin: auto;
+    padding: 30px;
+    color: white;
+    background-color: red;
+    align-self: center;
+    cursor: pointer;
+    border: 3px solid red;
+}
+.BigRedButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.ButtonHolder {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer {
+    background-color: darkgray;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray; 
+    margin-top: 20px;
+}
+#FooterDiv {
+    background-color: darkgray;
+}
+.ContactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    background-color: darkgray;
+}
+.ContactInfo div {
+    background-color: darkgray;
+    padding: 10px;
+    margin: auto;
+    color: black;
+}
+.ContactInfo h4 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.ContactInfo p {
+    color: white;
+}
+.ContactInfo p strong {
+    color: white;
+}
+
+.TailLine {
+    background-color: black;
+    padding: 10px;
+}
+.TailLine p {
+    color: white;
+}
+.Link {
+    text-decoration: none;
+    color: black;
+}
+.Link:hover{
+    color: white;
+}
