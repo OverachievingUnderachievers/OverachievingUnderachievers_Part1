@@ -4,7 +4,12 @@ h1 {
 body {
     background-color: whitesmoke;
 }
-
+.square {
+    height: 240px;
+    width: 50px;
+    background-color: #fbf9f9;
+  }
+  
 footer {
     background-color: darkgray;
 }
