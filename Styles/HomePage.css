@@ -99,7 +99,9 @@ article {
     justify-content: space-around;
 }
 
-
+#PlansArticle{
+    margin-top: 0%;
+}
 
 div h1, div p, div .Tagline {
     color: black;
@@ -146,6 +148,7 @@ li {
     align-self: center;
     cursor: pointer;
     border: 3px solid red;
+    text-decoration: none;
 }
 .BigRedButton:hover {
     background-color: white;
