@@ -9,7 +9,7 @@ body {
     width: 50px;
     background-color: #fbf9f9;
   }
-  
+
 footer {
     background-color: darkgray;
 }
@@ -60,6 +60,12 @@ article {
     flex-direction: column;
     justify-content: space-around;
 }
+ 
+table, th, td {
+    text-decoration: none;
+    border: 0.5px solid #000000;
+    text-align: left;
+   }  
 
 div {
     padding: 20px;
@@ -112,6 +118,7 @@ footer section {
     align-items: center;
     background-color: darkgray; 
     margin-top: 20px;
+    
 }
 .ContactInfo {
     display: flex;
