@@ -1,117 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="Styles/apply.css" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Job Application">
-    <meta name="keywords" content="html form">
+    <meta name="keywords" content="html form, job application">
     <meta name="author" content="Harry Webb">
+    <link rel="stylesheet" href="Styles/UnifiedStyles.css">
     <title>Job Application Page</title>
 </head>
-<body class="apply-body">
-<!--NAV BAR START-->
-    <header class="apply-nav-header">
-        <div class="apply-container">
-             <div>
-                <img src="Styles/Images/TOULogo.png" alt="Overachieving Underachievers Logo">
-            </div>
-            <div id="logo-text">
-                <h1>Overachieving Underachievers</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="apply-nav-li"><a href="index.html" >Home</a></li>
-                    <li class="apply-nav-li"><a href="jobs.html" >Jobs</a></li>
-                    <li class="apply-nav-li"><a href="apply.html" >Apply</a></li>
-                    <li class="apply-nav-li"><a href="about.html" >About</a></li>
-                </ul>
-            </nav>
-        </div>
+<body>
+    <header>
+        <img src="Styles/Images/TOULogo.png" alt="Overachieving Underachievers Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Plans.html">Plans</a>
+            <a href="AboutPage.html">About</a>
+        </nav>
+        <nav class="NavRight">
+            <a id="Carrers">Carrers:</a>
+            <a href="Combinejobss.html">Job Descriptions</a>
+            <a href="apply.html">Job Application</a>
+        </nav>
     </header>
-<!--NAV BAR END-->
-    <div class="apply-page">
-        <header class="apply-header">
-            <h1 class="apply-h1">Job Application Page</h1>
-            <hr class="apply-hr">
-        </header>
 
-        <main class="apply-main">
-            <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post"> <!-- Sends page to form submission when 'Apply' is clicked -->
-                
-                <label class="apply-label">Job Reference Number: </label>
-                <select class="apply-input" id="reference_number" name="reference_number" required>
-                    <option value="">Please Select</option>
-                    <option value="ref1">1</option>
-                    <option value="ref2">2</option>
-                    <option value="ref3">3</option>
-                </select>
-                    <br><br> <!-- Creates a page break -->
-                <label class="apply-label" for="first_name">First Name: </label>
-                <input class="apply-input" type="text" id="first_name" name="first_name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Steven" required>
-                    <br><br>
-                <label class="apply-label" for="last_name">Last Name: </label>
-                <input class="apply-input" type="text" id="last_name" name="last_name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Smith" required>
-                    <br><br>
-                <label class="apply-label" for="DOB">Date of Birth: </label>
-                <input class="apply-input" type="text" id="DOB" name="DOB" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
-                <br><br>
-                <fieldset class="apply-fieldset">
-                    <legend>Gender</legend>
-                <input class="apply-input" type="radio" id="male" name="gender" value="male" checked="checked">
-                <label class="apply-label" for="male">Male</label>
+    <article class="NoImageArticle">
+        <section>
+            <div class="LeftAlignDiv">
+                <h1 class="Tagline">Apply Now</h1>
+                <p>Fill out this quick and easy form and you'll be climbing the corporate ladder of minimum effort in no time.</p>
+            </div>
+        </section>
 
-                <input class="apply-input" type="radio" id="female" name="gender" value="female">
-                <label class="apply-label" for="female">Female</label>
+        <section>
+            <div class="LeftAlignDiv" style="width:100%">
+                <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
-                <input class="apply-input" type="radio" id="other" name="gender">
-                <label class="apply-label" for="other">Other</label>
-                </fieldset>
-                <br>
-                <label class="apply-label" for="address">Street Address: </label>
-                <input class="apply-input" type="text" id="address" name="address" maxlength="40" required>
-                    <br><br>
-                <label class="apply-label" for="suburb">Suburb/town: </label>
-                <input class="apply-input" type="text" id="suburb" name="suburb" maxlength="40" required>
-                    <br><br>
-                <label class="apply-label">State: </label>
-                <select class="apply-input" id="state" name="state" required>
-                    <option value="">Please Select</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select>
-                <br><br>
-                <label class="apply-label" for="postcode">Postcode: </label>
-                <input class="apply-input" type="text" id="postcode" name="postcode" pattern="\d{4}" placeholder="e.g. 0000" required>
-                    <br><br>
+                    <label class="apply-label">Job Reference Number:</label>
+                    <select class="apply-input" id="reference_number" name="reference_number" required>
+                        <option value="">Please Select</option>
+                        <option value="ref1">1</option>
+                        <option value="ref2">2</option>
+                        <option value="ref3">3</option>
+                    </select>
 
+                    <label class="apply-label" for="first_name">First Name:</label>
+                    <input class="apply-input" type="text" id="first_name" name="first_name" placeholder="e.g. Steven" required>
 
-                <label class="apply-label" for="email">Email: </label>
-                <input class="apply-input" type="email" id="email" name="email" placeholder="e.g. bloke@example.com" required>
-                    <br><br>
-                <label class="apply-label" for="phone_number">Phone number: </label>
-                <input class="apply-input" type="text" id="phone_number" name="phone_number" pattern="[0-9\s]{8,12}" required>
-                    <br><br>
+                    <label class="apply-label" for="last_name">Last Name:</label>
+                    <input class="apply-input" type="text" id="last_name" name="last_name" placeholder="e.g. Smith" required>
 
-                <label class="apply-label">Required Technical List: </label>
-                <input class="apply-input" type="checkbox" name="RTL" id="1" checked="checked">?
-                <input class="apply-input" type="checkbox" name="RTL" id="2">??
-                <input class="apply-input" type="checkbox" name="RTL" id="3">???
-                <input class="apply-input" type="checkbox" name="RTL" id="4">????
-                    <br><br>
-                <label class="apply-label" for="other_skills">Other Skills: </label><br>
-                <textarea class="apply-input" name="other_skills" id="other_skills"></textarea>
+                    <label class="apply-label" for="DOB">Date of Birth:</label>
+                    <input class="apply-input" type="text" id="DOB" name="DOB" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
 
-                <footer class="apply-footer">
-                <input class="apply-button" type="submit" value="Apply">
-                </footer>
-            </form>
-        </main>
-    </div>
+                    <fieldset class="apply-fieldset">
+                        <legend>Gender</legend>
+                        <input class="apply-input" type="radio" id="male" name="gender" value="male" checked>
+                        <label class="apply-label" for="male">Male</label>
+
+                        <input class="apply-input" type="radio" id="female" name="gender" value="female">
+                        <label class="apply-label" for="female">Female</label>
+
+                        <input class="apply-input" type="radio" id="other" name="gender" value="other">
+                        <label class="apply-label" for="other">Other</label>
+                    </fieldset>
+
+                    <label class="apply-label" for="address">Street Address:</label>
+                    <input class="apply-input" type="text" id="address" name="address" maxlength="40" required>
+
+                    <label class="apply-label" for="suburb">Suburb/Town:</label>
+                    <input class="apply-input" type="text" id="suburb" name="suburb" maxlength="40" required>
+
+                    <label class="apply-label">State:</label>
+                    <select class="apply-input" id="state" name="state" required>
+                        <option value="">Please Select</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+
+                    <label class="apply-label" for="postcode">Postcode:</label>
+                    <input class="apply-input" type="text" id="postcode" name="postcode" pattern="\d{4}" placeholder="e.g. 0000" required>
+
+                    <label class="apply-label" for="email">Email:</label>
+                    <input class="apply-input" type="email" id="email" name="email" placeholder="e.g. bloke@example.com" required>
+
+                    <label class="apply-label" for="phone_number">Phone Number:</label>
+                    <input class="apply-input" type="text" id="phone_number" name="phone_number" pattern="[0-9\s]{8,12}" required>
+
+                    <label class="apply-label">Required Technical List:</label><br>
+                    <input class="apply-input" type="checkbox" name="RTL" id="1">?
+                    <input class="apply-input" type="checkbox" name="RTL" id="2">??
+                    <input class="apply-input" type="checkbox" name="RTL" id="3">???
+                    <input class="apply-input" type="checkbox" name="RTL" id="4">????
+
+                    <label class="apply-label" for="other_skills">Other Skills:</label>
+                    <textarea class="apply-input" name="other_skills" id="other_skills"></textarea>
+
+                    <div class="ButtonHolder">
+                        <input class="BigRedButton" type="submit" value="Apply">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <div class="ContactInfo">
+            <div><strong>Email:</strong><a class="Link" href="mailto:support@overachievingunderachievers.biz"> support@overachievingunderachievers.biz</a></div>
+            <div><strong>Phone:</strong> +1 (800) 867-5309</div>
+            <div><strong>Fax:</strong> lol no.</div>
+            <div><strong>Address:</strong> 404 Productivity Blvd, Suite 0, Hustleville, NY 10000</div>
+            <div><strong>Hours:</strong> Mon–Fri, 11:00 AM – 2:00 PM (we try)</div>
+            <div><strong>Jira:</strong><a class="Link" target="_blank" href="https://overachievingunderachievers.atlassian.net/"> overachievingunderachievers.atlassian.net</a></div>
+        </div>
+        <div class="TailLine">
+            <p>&copy; 2025 Overachieving Underachievers. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

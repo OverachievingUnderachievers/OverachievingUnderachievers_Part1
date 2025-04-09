@@ -1,28 +1,38 @@
-/*
-display: flex makes a line of items
-flex-direction sets the line’s direction
-flex-wrap lets the line break to new rows
-justify-content manages how items spread along the line
-align-items manages how items stack across the line
-*/
-
-
+/* Global Styles */
 * {
     color: black;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 30px;
 }
-body {
-    background-color: whitesmoke;
+
+.Tagline {
+    font-style: italic;
+    font-size: 20px;
 }
 
-footer {
-    background-color: darkgray;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+li {
+    padding: 15px;
+    color: black;
+}
+
+/* Header */
+header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -33,6 +43,15 @@ header{
     top: 0;
     overflow: clip;
     z-index: 12;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header img {
+    width: 52px;
+    height: auto;
+    margin: auto 8px;
+    align-self: center;
 }
 
 nav {
@@ -40,31 +59,31 @@ nav {
     flex-direction: row;
     flex: 1;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-header img {
-    width : 50px;
-    height: auto;
-    margin: auto;
-}
-nav a{
+nav a {
     padding: 16px;
     cursor: pointer;
     color: white;
     text-decoration: none;
+    white-space: nowrap;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: white;
-    color: cornflowerblue; 
+    color: cornflowerblue;
 }
-#Carrers:hover {
-    background-color: cornflowerblue;
-    color: white;
-    cursor:default;
-}
+
 .NavRight {
     margin-left: auto;
     justify-content: flex-end;
+}
+
+#Carrers:hover {
+    background-color: cornflowerblue;
+    color: white;
+    cursor: default;
 }
 
 .ImageBoxOverlay {
@@ -72,6 +91,11 @@ nav a:hover{
     text-align: center;
     color: white;
 }
+
+#CorperateGarbage {
+    width: 100%;
+}
+
 .TextOverlay {
     position: absolute;
     padding: 16px;
@@ -80,13 +104,12 @@ nav a:hover{
     transform: translate(-50%, -50%);
     background-color: cornflowerblue;
 }
-.TextOverlay p,.TextOverlay h1 {
+
+.TextOverlay p,
+.TextOverlay h1 {
     color: white;
 }
 
-#CorperateGarbage {
-    width: 100%;
-}
 article {
     color: black;
     background: cornflowerblue;
@@ -99,32 +122,29 @@ article {
     justify-content: space-around;
 }
 
-#PlansArticle{
+.NoImageArticle {
     margin-top: 0%;
 }
 
-div h1, div p, div .Tagline {
-    color: black;
-}
-.Tagline {
-    font-style: italic;
-    font-size: 20px;
-}
 section {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
-    background-color: white; 
+    background-color: white;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-.LeftAlignDiv, .RightAlignDiv {
+.LeftAlignDiv,
+.RightAlignDiv {
     width: 45%;
     padding: 20px;
 }
 
-.LeftAlignDiv img, .RightAlignDiv img {
+.LeftAlignDiv img,
+.RightAlignDiv img,
+.johntalkvalta img {
     display: block;
     width: 100%;
     height: auto;
@@ -132,24 +152,63 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-ul {
-    list-style-type: none;
-}
-li {
-    color: black;
-    padding: 15px;
+
+.johntalkvalta img {
+    height: 400px;
+    width: 400px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.apply-input,
+textarea,
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.apply-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Buttons */
 .BigRedButton {
     margin: auto;
-    padding: 30px;
+    padding: 15px 30px;
     color: white;
     background-color: red;
     align-self: center;
     cursor: pointer;
     border: 3px solid red;
     text-decoration: none;
+    font-size: 18px;
 }
+
 .BigRedButton:hover {
     background-color: white;
     color: black;
@@ -159,7 +218,10 @@ li {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-top: 20px;
 }
+
+/* Footer */
 footer {
     background-color: darkgray;
 }
@@ -168,12 +230,11 @@ footer section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: darkgray; 
-    margin-top: 20px;
-}
-#FooterDiv {
     background-color: darkgray;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
+
 .ContactInfo {
     display: flex;
     flex-wrap: wrap;
@@ -182,23 +243,21 @@ footer section {
     margin: 30px auto;
     padding: 20px;
     text-align: left;
-    color: white;
     background-color: darkgray;
+    gap: 30px;
 }
+
 .ContactInfo div {
     background-color: darkgray;
     padding: 10px;
     margin: auto;
     color: black;
-}
-.ContactInfo h4 {
-    margin-bottom: 15px;
-    color: white;
+    min-width: 220px;
+    flex-grow: 1;
 }
 
-.ContactInfo p {
-    color: white;
-}
+.ContactInfo h4,
+.ContactInfo p,
 .ContactInfo p strong {
     color: white;
 }
@@ -207,13 +266,45 @@ footer section {
     background-color: black;
     padding: 10px;
 }
+
 .TailLine p {
     color: white;
 }
+
 .Link {
     text-decoration: none;
     color: black;
 }
-.Link:hover{
+
+.Link:hover {
     color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .LeftAlignDiv,
+    .RightAlignDiv {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    .ButtonHolder {
+        width: 100%;
+    }
+
+    .TextOverlay {
+        top: 40%;
+        padding: 10px;
+    }
+
+    .BigRedButton {
+        width: 100%;
+    }
 }
