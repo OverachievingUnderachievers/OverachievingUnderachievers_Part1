@@ -10,108 +10,148 @@
 </head>
 <body class="apply-body">
 <!--NAV BAR START-->
-    <header class="apply-nav-header">
-        <div class="apply-container">
+    <header>
+        <div class="section-container">
              <div>
-                <img src="Styles/Images/TOULogo.png" alt="Overachieving Underachievers Logo">
+                <img src="Styles/Images/TOULogo2.png" alt="Overachieving Underachievers Logo">
             </div>
             <div id="logo-text">
-                <h1>Overachieving Underachievers</h1>
+                <h1>OVERACHIEVING UNDERACHIEVERS</h1>
             </div>
             <nav>
                 <ul>
-                    <li class="apply-nav-li"><a href="index.html" >Home</a></li>
-                    <li class="apply-nav-li"><a href="jobs.html" >Jobs</a></li>
-                    <li class="apply-nav-li"><a href="apply.html" >Apply</a></li>
-                    <li class="apply-nav-li"><a href="about.html" >About</a></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="jobs.html" >Jobs</a></li>
+                    <li><a href="apply.html" >Apply</a></li>
+                    <li><a href="about.html" >About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 <!--NAV BAR END-->
-    <div class="apply-page">
-        <header class="apply-header">
-            <h1 class="apply-h1">Job Application Page</h1>
-            <hr class="apply-hr">
-        </header>
+    <div class="section-container">
+        <div class="apply-page">
+            <div class="apply-header">
+                <h1>Application Form</h1>
+                <hr>
+            </div>
+    
+            <main class="apply-main">
+                <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post"> <!-- Sends page to form submission when 'Apply' is clicked -->
+                    
+                    <label class="apply-label">Job Reference Number: </label>
+                    <div class="apply-row">
+                        <select class="apply-input" id="reference-number" name="reference_number" required>
+                            <option value="">Please Select</option>
+                            <option value="ref1">1</option>
+                            <option value="ref2">2</option>
+                            <option value="ref3">3</option>
+                        </select>
+                    </div>
+    
+                    <label class="apply-label">Name: </label>
+                    <div class="apply-row">
+                        <div class="input-name">
+                            <input class="apply-input" type="text" id="first-name" name="first-name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Steven" required>
+                            <label class="apply-sub-input">First Name</label>
+                        </div>
+                        <div class="input-name">
+                            <input class="apply-input" type="text" id="last_name" name="last-name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Smith" required>
+                            <label class="apply-sub-input">Last Name</label>
+                        </div>
+                    </div>
+    
+                    <label class="apply-label" for="DOB">Date of Birth: </label>
+                    <div class="apply-row">
+                        <input class="apply-input" type="text" id="DOB" name="DOB" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
+                    </div>
+                    
+                    <div class="apply-row">
+                        <fieldset class="apply-fieldset">
+                            <legend>Gender</legend>
+                            <input class="gender-input" type="radio" id="male" name="gender" value="male" checked="checked">
+                            <label class="gender-label" for="male">Male</label>
+        
+                            <input class="gender-input" type="radio" id="female" name="gender" value="female">
+                            <label class="gender-label" for="female">Female</label>
+        
+                            <input class="gender-input" type="radio" id="other" name="gender">
+                            <label class="gender-label" for="other">Other</label>
+                        </fieldset>
+                    </div>
+           
+                    <div class="apply-row">
+                        <div class="input-group">
+                            <label class="apply-label" for="address">Street Address: </label>
+                            <input class="apply-input" type="text" id="address" name="address" maxlength="40" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="apply-label" for="suburb">Suburb / Town: </label>
+                            <input class="apply-input" type="text" id="suburb" name="suburb" maxlength="40" required>
+                        </div>
+                    </div>
+    
+                    <div class="apply-row">
+                        <div class="input-group">
+                            <label class="apply-label" for="postcode">Postcode: </label>
+                            <input class="apply-input" type="text" id="postcode" name="postcode" pattern="\d{4}" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="apply-label">State: </label>
+                            <select class="apply-input" id="state" name="state" required>
+                                <option value="">Please Select</option>
+                                <option value="VIC">VIC</option>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="apply-row">
+                        <div class="input-group">
+                            <label class="apply-label" for="email">Email: </label>
+                            <input class="apply-input" type="email" id="email" name="email" placeholder="e.g. ex@example.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="apply-label" for="phone_number">Phone Number: </label>
+                            <input class="apply-input" type="text" id="phone_number" name="phone_number" pattern="[0-9\s]{8,12}" required>
+                        </div>
+                    </div>
 
-        <main class="apply-main">
-            <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post"> <!-- Sends page to form submission when 'Apply' is clicked -->
-                
-                <label class="apply-label">Job Reference Number: </label>
-                <select class="apply-input" id="reference_number" name="reference_number" required>
-                    <option value="">Please Select</option>
-                    <option value="ref1">1</option>
-                    <option value="ref2">2</option>
-                    <option value="ref3">3</option>
-                </select>
-                    <br><br> <!-- Creates a page break -->
-                <label class="apply-label" for="first_name">First Name: </label>
-                <input class="apply-input" type="text" id="first_name" name="first_name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Steven" required>
-                    <br><br>
-                <label class="apply-label" for="last_name">Last Name: </label>
-                <input class="apply-input" type="text" id="last_name" name="last_name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Smith" required>
-                    <br><br>
-                <label class="apply-label" for="DOB">Date of Birth: </label>
-                <input class="apply-input" type="text" id="DOB" name="DOB" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
-                <br><br>
-                <fieldset class="apply-fieldset">
-                    <legend>Gender</legend>
-                <input class="apply-input" type="radio" id="male" name="gender" value="male" checked="checked">
-                <label class="apply-label" for="male">Male</label>
-
-                <input class="apply-input" type="radio" id="female" name="gender" value="female">
-                <label class="apply-label" for="female">Female</label>
-
-                <input class="apply-input" type="radio" id="other" name="gender">
-                <label class="apply-label" for="other">Other</label>
-                </fieldset>
-                <br>
-                <label class="apply-label" for="address">Street Address: </label>
-                <input class="apply-input" type="text" id="address" name="address" maxlength="40" required>
-                    <br><br>
-                <label class="apply-label" for="suburb">Suburb/town: </label>
-                <input class="apply-input" type="text" id="suburb" name="suburb" maxlength="40" required>
-                    <br><br>
-                <label class="apply-label">State: </label>
-                <select class="apply-input" id="state" name="state" required>
-                    <option value="">Please Select</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select>
-                <br><br>
-                <label class="apply-label" for="postcode">Postcode: </label>
-                <input class="apply-input" type="text" id="postcode" name="postcode" pattern="\d{4}" placeholder="e.g. 0000" required>
-                    <br><br>
-
-
-                <label class="apply-label" for="email">Email: </label>
-                <input class="apply-input" type="email" id="email" name="email" placeholder="e.g. bloke@example.com" required>
-                    <br><br>
-                <label class="apply-label" for="phone_number">Phone number: </label>
-                <input class="apply-input" type="text" id="phone_number" name="phone_number" pattern="[0-9\s]{8,12}" required>
-                    <br><br>
-
-                <label class="apply-label">Required Technical List: </label>
-                <input class="apply-input" type="checkbox" name="RTL" id="1" checked="checked">?
-                <input class="apply-input" type="checkbox" name="RTL" id="2">??
-                <input class="apply-input" type="checkbox" name="RTL" id="3">???
-                <input class="apply-input" type="checkbox" name="RTL" id="4">????
-                    <br><br>
-                <label class="apply-label" for="other_skills">Other Skills: </label><br>
-                <textarea class="apply-input" name="other_skills" id="other_skills"></textarea>
-
-                <footer class="apply-footer">
-                <input class="apply-button" type="submit" value="Apply">
-                </footer>
-            </form>
-        </main>
+                    <div class="apply-row">
+                        <fieldset class="apply-fieldset">
+                            <legend>Required Technical List</legend>
+                        <input class="tech-input" type="checkbox" name="RTL" id="1" checked="checked">
+                        <label class="tech-label" for="1">?</label>
+                        <input class="tech-input" type="checkbox" name="RTL" id="2">
+                        <label class="tech-label" for="2">??</label>
+                        <input class="tech-input" type="checkbox" name="RTL" id="3">
+                        <label class="tech-label" for="3">???</label>
+                        <input class="tech-input" type="checkbox" name="RTL" id="4">
+                        <label class="tech-label" for="4">????</label>
+                        </fieldset>
+                    </div>
+    
+                    <label class="apply-label" for="other-skills">Other Skills: </label>
+                    <div class="apply-row">
+                        <textarea class="apply-input" name="other-skills" id="other-skills"></textarea>
+                    </div>
+    
+                    <div class="button-container">
+                        <input class="apply-button" type="submit" value="Apply">
+                        <input class="apply-button" type="reset" value="Reset">
+                    </div>
+                </form>
+            </main>
+        </div>
     </div>
+    <footer class="section-container">
+            <h4>OVERACHIEVING UNDERACHIEVERS</h4>
+    </footer>
 </body>
 </html>
