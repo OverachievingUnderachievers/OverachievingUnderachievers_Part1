@@ -79,6 +79,10 @@ nav a:hover {
     cursor: default;
 }
 /* Main Content */
+h1 {
+    font: bold 28px/1.2 Helvetica, sans-serif;
+}
+
 .ImageBoxOverlay {
     position: relative;
     text-align: center;
@@ -154,10 +158,14 @@ section {
     margin: 0 auto;
 }
 aside {
-    width: 45%;
+    width: 25%;
     padding: 20px;
     float: right;
+    border: 2px solid #FFD700;
+    margin: 20px;
+    background-color: #2e3a49;
 }
+
 
 aside img {
     display: block;
@@ -239,7 +247,10 @@ footer section {
 
 .TailLine p {
     color: white;
+    text-align: center;
+    font-size: 0.8em;
 }
+
 
 .Link {
     text-decoration: none;
@@ -319,4 +330,72 @@ form {
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
+}
+
+/* === About Page Specific Styles By Chat GPT === */
+
+/* Float group photo to the right with styled border */
+figure {
+    float: right;
+    margin: 20px;
+    border: 3px solid #FFD700; /* gold border */
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #2e3a49;
+    max-width: 80%;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style for student ID list */
+.student-ids {
+    text-align: right;
+    padding-right: 40px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+/* Style for table section */
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table-container table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #2e3a49;
+    color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-container caption {
+    caption-side: top;
+    font-weight: bold;
+    padding: 10px;
+    color: #FFD700;
+    font-size: 18px;
+}
+
+.table-container th,
+.table-container td {
+    padding: 12px;
+    border: 1px solid #444;
+    background-color: #3f4d5f; /* Hex-based background */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table-container th {
+    font-weight: bold;
+    background-color: #2e3a49;
+}
+
+.table-container td:hover {
+    background-color: #546478;
 }
