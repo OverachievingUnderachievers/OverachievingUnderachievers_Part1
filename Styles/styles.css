@@ -68,7 +68,16 @@ nav a:hover {
 .NavRight {
     margin-left: auto;
 }
+.Current {
+    color: #FFD700;
+    transition: 0.15s ease-in;
+    cursor: default;
+    border: #FFD700 1px dotted;
+}
 
+.Current:hover {
+    cursor: default;
+}
 /* Main Content */
 .ImageBoxOverlay {
     position: relative;
