@@ -153,6 +153,19 @@ section {
     object-fit: contain;
     margin: 0 auto;
 }
+aside {
+    width: 45%;
+    padding: 20px;
+    float: right;
+}
+
+aside img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
 
 /* Button */
 .BigRedButton {
