@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Job Application Form">
   <meta name="keywords" content="Job Application, Form, HTML">
@@ -13,7 +13,7 @@
 
   <!-- Header -->
   <header>
-    <img src="images/TOULogo2.png" alt="Logo" />
+    <img src="images/TOULogo2.png" alt="Logo">
     <nav>
         <a class="NonActive">OVERACHIEVING UNDERACHIEVERS</a>
         <a href="index.html">Home</a>
@@ -35,41 +35,41 @@
         <p class="Tagline">Apply to join the Overachieving Underachievers</p>
         <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
           <!-- Reference -->
-          <label class="apply-label">Job Reference Number:</label><br />
+          <label class="apply-label">Job Reference Number:</label><br>
           <select class="apply-input" name="reference_number" required>
             <option value="">Please Select</option>
             <option value="ref1">1</option>
             <option value="ref2">2</option>
             <option value="ref3">3</option>
-          </select><br /><br />
+          </select><br><br>
 
           <!-- Name -->
           <label class="apply-label">Name:</label>
           <div class="apply-row">
-            <input class="apply-input" type="text" name="first-name" placeholder="First Name" required />
-            <input class="apply-input" type="text" name="last-name" placeholder="Last Name" required />
+            <input class="apply-input" type="text" name="first-name" placeholder="First Name" required>
+            <input class="apply-input" type="text" name="last-name" placeholder="Last Name" required>
           </div>
 
           <!-- DOB -->
           <label class="apply-label">Date of Birth:</label>
-          <input class="apply-input" type="text" name="DOB" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" required /><br /><br />
+          <input class="apply-input" type="text" name="DOB" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" required><br><br>
 
           <!-- Gender -->
           <fieldset class="apply-fieldset">
             <legend>Gender</legend>
-            <label><input type="radio" name="gender" value="male" checked /> Male</label>
-            <label><input type="radio" name="gender" value="female" /> Female</label>
-            <label><input type="radio" name="gender" value="other" /> Other</label>
-          </fieldset><br />
+            <label><input type="radio" name="gender" value="male" checked> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+          </fieldset><br>
 
           <!-- Address -->
           <div class="apply-row">
-            <input class="apply-input" type="text" name="address" placeholder="Street Address" required />
-            <input class="apply-input" type="text" name="suburb" placeholder="Suburb/Town" required />
+            <input class="apply-input" type="text" name="address" placeholder="Street Address" required>
+            <input class="apply-input" type="text" name="suburb" placeholder="Suburb/Town" required>
           </div>
 
           <div class="apply-row">
-            <input class="apply-input" type="text" name="postcode" placeholder="Postcode" pattern="\d{4}" required />
+            <input class="apply-input" type="text" name="postcode" placeholder="Postcode" pattern="\d{4}" required>
             <select class="apply-input" name="state" required>
               <option value="">State</option>
               <option value="VIC">VIC</option>
@@ -85,27 +85,27 @@
 
           <!-- Contact -->
           <div class="apply-row">
-            <input class="apply-input" type="email" name="email" placeholder="Email" required />
-            <input class="apply-input" type="text" name="phone_number" placeholder="Phone Number" pattern="[0-9\s]{8,12}" required />
+            <input class="apply-input" type="email" name="email" placeholder="Email" required>
+            <input class="apply-input" type="text" name="phone_number" placeholder="Phone Number" pattern="[0-9\s]{8,12}" required>
           </div>
 
           <!-- Skills -->
           <fieldset class="apply-fieldset">
             <legend>Required Technical Skills</legend>
-            <label><input type="checkbox" name="skill" value="1" checked /> HTML</label>
-            <label><input type="checkbox" name="skill" value="2" /> CSS</label>
-            <label><input type="checkbox" name="skill" value="3" /> JavaScript</label>
-            <label><input type="checkbox" name="skill" value="4" /> Debugging</label>
-          </fieldset><br />
+            <label><input type="checkbox" name="skill" value="1" checked> HTML</label>
+            <label><input type="checkbox" name="skill" value="2"> CSS</label>
+            <label><input type="checkbox" name="skill" value="3"> JavaScript</label>
+            <label><input type="checkbox" name="skill" value="4"> Debugging</label>
+          </fieldset><br>
 
           <!-- Other Skills -->
-          <label class="apply-label">Other Skills:</label><br />
-          <textarea class="apply-input" name="other-skills" rows="5" placeholder="List additional skills..."></textarea><br /><br />
+          <label class="apply-label">Other Skills:</label><br>
+          <textarea class="apply-input" name="other-skills" rows="5" placeholder="List additional skills..."></textarea><br><br>
 
           <!-- Buttons -->
           <div class="ButtonHolder">
-            <input class="BigRedButton" type="submit" value="Apply" />
-            <input class="BigRedButton" type="reset" value="Reset" />
+            <input class="BigRedButton" type="submit" value="Apply">
+            <input class="BigRedButton" type="reset" value="Reset">
           </div>
         </form>
       </div>
