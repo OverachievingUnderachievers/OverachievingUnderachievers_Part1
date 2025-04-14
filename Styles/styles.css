@@ -1,16 +1,15 @@
 /* ============================== */
-/* Existing styles – UNCHANGED   */
+/* GLOBAL STYLES + PAGE RESET     */
 /* ============================== */
 
-/* General Reset and Base Style */
+/* Apply universal box-sizing, font, and text color */
 * {
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
     color: #fafafa;
 }
 
-/* background stuff*/
-
+/* Set background image and layout rules for the body */
 body {
     margin: 0px;
     padding: 0px;
@@ -21,7 +20,11 @@ body {
     background-position: center;
 }
 
-/* Header Style */
+/* ============================== */
+/* HEADER STYLING                 */
+/* ============================== */
+
+/* Style header background, spacing, and layout */
 header {
     background: #384959;
     color: #fafafa;
@@ -34,17 +37,20 @@ header {
     z-index: 12;
 }
 
-header img { /*image auto fit thing*/
+/* Logo inside header - keep size consistent */
+header img {
     max-width: 50px;
     height: auto;
     margin-right: 20px;
 }
 
+/* Primary nav styling (centered nav bar) */
 nav {
     justify-content: center;
     margin: auto;
 }
 
+/* Links inside nav */
 nav a {
     color: #fafafa;
     font-size: 17px;
@@ -54,6 +60,7 @@ nav a {
     border: #384959 1px solid;
 }
 
+/* Hover effects for nav links */
 nav a:hover {
     color: #FFD700;
     transition: 0.15s ease-in;
@@ -61,15 +68,19 @@ nav a:hover {
     border: #FFD700 1px dotted;
 }
 
+/* Disable hover effect for inactive static nav item */
 .NonActive:hover {
     color: #fafafa;
     cursor: default;
     border: #384959 1px solid;
 }
 
+/* Align secondary nav (careers) to right */
 .NavRight {
     margin-left: auto;
 }
+
+/* Highlight the current page */
 .Current {
     color: #FFD700;
     transition: 0.15s ease-in;
@@ -80,17 +91,24 @@ nav a:hover {
 .Current:hover {
     cursor: default;
 }
-/* Main Content */
+
+/* ============================== */
+/* MAIN CONTENT STYLING          */
+/* ============================== */
+
+/* Heading style using shorthand */
 h1 {
     font: bold 28px/1.2 Helvetica, sans-serif;
 }
 
+/* Hero image banner container */
 .ImageBoxOverlay {
     position: relative;
     text-align: center;
     color: white;
 }
 
+/* Overlay text inside banner */
 .TextOverlay {
     position: absolute;
     padding: 16px;
@@ -100,15 +118,18 @@ h1 {
     background-color: #384959;
 }
 
+/* Text color override for overlay */
 .TextOverlay p, .TextOverlay h1 {
     color: #fafafa;
 }
 
-#CorperateGarbage { /*an image*/
+/* Full-width image with bottom border */
+#CorperateGarbage {
     width: 100%;
     border-bottom: #384959 5px solid;
 }
 
+/* Main article layout */
 article {
     background: #384959;
     padding: 30px;
@@ -126,16 +147,19 @@ article {
     margin-bottom: 5%;
 }
 
+/* Push article up slightly if no image is present */
 .NoImageArticle {
     margin-top: 3%;
 }
 
+/* Subheading / tagline styling */
 .Tagline {
     font-style: italic;
     font-size: 20px;
     color: #FFD700;
 }
 
+/* Content section layout (flex) */
 section {
     display: flex;
     justify-content: space-around;
@@ -147,11 +171,13 @@ section {
     flex-wrap: wrap;
 }
 
+/* Left and right content alignment blocks */
 .LeftAlignDiv, .RightAlignDiv {
     width: 45%;
     padding: 20px;
 }
 
+/* Image alignment inside content blocks */
 .LeftAlignDiv img, .RightAlignDiv img {
     display: block;
     width: 100%;
@@ -159,6 +185,12 @@ section {
     object-fit: contain;
     margin: 0 auto;
 }
+
+/* ============================== */
+/* ASIDE STYLING (ABOUT PAGE)    */
+/* ============================== */
+
+/* Float the aside to the right of content */
 aside {
     width: 25%;
     padding: 20px;
@@ -168,7 +200,7 @@ aside {
     background-color: #2e3a49;
 }
 
-
+/* Consistent image sizing in aside */
 aside img {
     display: block;
     width: 100%;
@@ -177,7 +209,11 @@ aside img {
     margin: 0 auto;
 }
 
-/* Button */
+/* ============================== */
+/* BUTTONS                       */
+/* ============================== */
+
+/* Large call-to-action button */
 .BigRedButton {
     margin: auto;
     padding: 15px 30px;
@@ -189,19 +225,25 @@ aside img {
     border-radius: 5px;
 }
 
-.BigRedButton:hover { /* button part 2*/
+/* Button hover interaction */
+.BigRedButton:hover {
     background-color: #FFD700;
     color: #0b2e33;
     transition: 0.15s ease-in;
     cursor: pointer;
 }
 
-.ButtonHolder { /*Button part 3?!?*/
+/* Centering container for buttons */
+.ButtonHolder {
     text-align: center;
     margin: 40px 0;
 }
 
-/* Footer */
+/* ============================== */
+/* FOOTER                        */
+/* ============================== */
+
+/* Main footer container */
 footer {
     padding: 10px 20px;
     background-color: #384959;
@@ -209,6 +251,7 @@ footer {
     color: #fafafa;
 }
 
+/* Optional footer section container */
 footer section {
     display: flex;
     justify-content: space-around;
@@ -221,6 +264,7 @@ footer section {
     background-color: #384959;
 }
 
+/* Footer contact section layout */
 .ContactInfo {
     display: flex;
     flex-wrap: wrap;
@@ -242,6 +286,7 @@ footer section {
     color: #fafafa;
 }
 
+/* Bottom copyright strip */
 .TailLine {
     background-color: black;
     padding: 10px;
@@ -253,7 +298,7 @@ footer section {
     font-size: 0.8em;
 }
 
-
+/* Generic links inside footer/contact */
 .Link {
     text-decoration: none;
     color: #fafafa;
@@ -264,9 +309,10 @@ footer section {
 }
 
 /* ============================== */
-/* Reusable FORM + INPUT STYLES  */
+/* FORM + INPUT STYLING          */
 /* ============================== */
 
+/* General input styles */
 .apply-input {
     width: 200px;
     padding: 8px;
@@ -278,6 +324,7 @@ footer section {
     margin-bottom: 10px;
 }
 
+/* Dropdown option styling */
 option {
     color: #384959;
 }
@@ -286,12 +333,14 @@ option {
     color: #999;
 }
 
+/* Textarea adjustments */
 textarea.apply-input {
     width: 100%;
     height: 100px;
     resize: vertical;
 }
 
+/* Form label styling */
 .apply-label {
     display: block;
     margin: 10px 0 5px;
@@ -299,6 +348,7 @@ textarea.apply-input {
     color: #fafafa;
 }
 
+/* Fieldset for grouped form elements */
 .apply-fieldset {
     padding: 10px 15px;
     border: 1px solid #fafafa;
@@ -306,11 +356,13 @@ textarea.apply-input {
     margin-bottom: 20px;
 }
 
+/* Legend inside fieldset */
 .apply-fieldset legend {
     font-weight: bold;
     color: #FFD700;
 }
 
+/* Grouped input rows */
 .apply-row {
     display: flex;
     flex-wrap: wrap;
@@ -327,6 +379,7 @@ form {
     margin-top: 20px;
 }
 
+/* Overlap fix for re-used class */
 .ButtonHolder {
     display: flex;
     gap: 20px;
@@ -334,26 +387,29 @@ form {
     margin-top: 20px;
 }
 
-/* === About Page Specific Styles By Chat GPT === */
+/* ============================== */
+/* ABOUT PAGE ENHANCEMENTS       */
+/* ============================== */
 
-/* Float group photo to the right with styled border */
+/* Float group photo with border */
 figure {
     float: right;
     margin: 20px;
-    border: 3px solid #FFD700; /* gold border */
+    border: 3px solid #FFD700;
     padding: 5px;
     border-radius: 6px;
     background-color: #2e3a49;
     max-width: 80%;
 }
 
+/* Resize figure image */
 figure img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* Style for student ID list */
+/* Student ID block alignment */
 .student-ids {
     text-align: right;
     padding-right: 40px;
@@ -361,13 +417,14 @@ figure img {
     font-weight: bold;
 }
 
-/* Style for table section */
+/* Table container styles */
 .table-container {
     width: 100%;
     margin-top: 20px;
     text-align: center;
 }
 
+/* Table styles inside container */
 .table-container table {
     margin: 0 auto;
     border-collapse: collapse;
@@ -385,11 +442,12 @@ figure img {
     font-size: 18px;
 }
 
+/* Table cell and hover effects */
 .table-container th,
 .table-container td {
     padding: 12px;
     border: 1px solid #444;
-    background-color: #3f4d5f; /* Hex-based background */
+    background-color: #3f4d5f;
     transition: background-color 0.2s ease-in-out;
 }
 
