@@ -4,12 +4,12 @@ h1 {
 body {
     background-color: whitesmoke;
 }
-.square {
+.square {   /* the square of spacing*/
     height: 240px;
     width: 50px;
     background-color: #fbf9f9;
   }
-
+  
 footer {
     background-color: darkgray;
 }
@@ -103,7 +103,7 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
-.johntalkvalta img {
+.johntalkvalta img {  /*the leftaligndiv didn't wanna work so i had to create a new css*/
     display: block;
     height: 400px;
     width: 400px;
