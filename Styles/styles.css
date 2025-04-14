@@ -9,6 +9,8 @@
     color: #fafafa;
 }
 
+/* background stuff*/
+
 body {
     margin: 0px;
     padding: 0px;
@@ -32,7 +34,7 @@ header {
     z-index: 12;
 }
 
-header img {
+header img { /*image auto fit thing*/
     max-width: 50px;
     height: auto;
     margin-right: 20px;
@@ -102,7 +104,7 @@ h1 {
     color: #fafafa;
 }
 
-#CorperateGarbage {
+#CorperateGarbage { /*an image*/
     width: 100%;
     border-bottom: #384959 5px solid;
 }
@@ -187,14 +189,14 @@ aside img {
     border-radius: 5px;
 }
 
-.BigRedButton:hover {
+.BigRedButton:hover { /* button part 2*/
     background-color: #FFD700;
     color: #0b2e33;
     transition: 0.15s ease-in;
     cursor: pointer;
 }
 
-.ButtonHolder {
+.ButtonHolder { /*Button part 3?!?*/
     text-align: center;
     margin: 40px 0;
 }
