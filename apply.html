@@ -32,102 +32,127 @@
   </header>
 
   <!-- Main Application Form -->
-  <article class="NoImageArticle">
+<article class="NoImageArticle">
     <section>
-      <div class="ApplyDiv">
+    <div class="apply-main">
         <h1>Job Application Form</h1>
         <p class="Tagline">Apply to join the Overachieving Underachievers</p>
 
-        <!-- Form generated and validated with ChatGPT guidance -->
         <form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
-        <section>
-        <div class="LeftAlignDiv">
+        <!-- Reference -->
+            <label class="apply-label" for="reference_number">Job Reference Number:</label>
+            <div class="apply-row">
+                <select class="apply-input" name="reference_number" id="reference_number" required>
+                    <option value="">Please Select</option>
+                    <option value="CE451">CE451</option>
+                    <option value="SD302">SD302</option>
+                </select>
+            </div>
+        
 
-          <!-- Reference -->
-          <label class="apply-label" for="reference_number">Job Reference Number:</label><br>
-          <select class="apply-input" name="reference_number" id="reference_number" required>
-            <option value="">Please Select</option>
-            <option value="CE451">CE451</option>
-            <option value="SD302">SD302</option>
-          </select><br><br>
+        <!-- Name -->
+        <span class="apply-label">Name: </span>
+        <div class="apply-row">
+            <div class="apply-input-name" id="apply-names">
+                <input class="apply-input" type="text" id="first-name" name="first-name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Steven" required>
+                <label class="apply-sub-input" for="first-name">First Name</label>
+            </div>
+            <div class="apply-input-name">
+                <input class="apply-input" type="text" id="last-name" name="last-name" pattern="{0,20}[A-Za-z]" placeholder="e.g. Smith" required>
+                <label class="apply-sub-input" for="last-name">Last Name</label>
+            </div>
+        </div>
 
-          <!-- Name -->
-          <label class="apply-label" for="first-name">First Name:</label>
-          <input class="apply-input" type="text" name="first-name" id="first-name" placeholder="First Name" required>
+        <!-- DOB with HTML5 pattern -->
+        <label class="apply-label" for="DOB">Date of Birth:</label>
+        <div class="apply-row">
+            <input class="apply-input" type="text" name="DOB" id="DOB" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" required>
+        </div>
 
-          <label class="apply-label" for="last-name">Last Name:</label>
-          <input class="apply-input" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
-
-          <!-- DOB with HTML5 pattern -->
-          <label class="apply-label" for="DOB">Date of Birth:</label>
-          <input class="apply-input" type="text" name="DOB" id="DOB" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" required><br><br>
-
-          <!-- Gender (fieldset = semantic grouping) -->
-          <fieldset class="apply-fieldset">
+        <!-- Gender (fieldset = semantic grouping) -->
+        <fieldset class="apply-fieldset">
             <legend>Gender</legend>
-            <label for="male"><input type="radio" id="male" name="gender" value="male" checked> Male</label>
-            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
-            <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
-          </fieldset><br>
+            <input class="gender-input" type="radio" id="male" name="gender" value="male" checked="checked">
+            <label class="gender-label" for="male">Male</label>
 
-          <!-- Contact -->
-          <label class="apply-label" for="email">Email:</label>
-          <input class="apply-input" type="email" name="email" id="email" placeholder="Email" required>
+            <input class="gender-input" type="radio" id="female" name="gender" value="female">
+            <label class="gender-label" for="female">Female</label>
 
-          <label class="apply-label" for="phone_number">Phone Number:</label>
-          <input class="apply-input" type="text" name="phone_number" id="phone_number" placeholder="Phone Number" pattern="[0-9\s]{8,12}" required>
-          <br><br><br><br>
+            <input class="gender-input" type="radio" id="other" name="gender">
+            <label class="gender-label" for="other">Other</label>
+        </fieldset>
+
+        <!-- Address -->
+        <div class="apply-row">
+            <div class="input-group">
+                <label class="apply-label" for="address">Street Address: </label>
+                <input class="apply-input" type="text" id="address" name="address" maxlength="40" required>
+            </div>
+            <div class="input-group">
+                <label class="apply-label" for="suburb">Suburb / Town: </label>
+                <input class="apply-input" type="text" id="suburb" name="suburb" maxlength="40" required>
+            </div>
         </div>
 
-        <div class="RightAlignDiv">
-          <!-- Address -->
-          <label class="apply-label" for="address">Street Address:</label>
-          <input class="apply-input" type="text" name="address" id="address" placeholder="Street Address" required>
+        <div class="apply-row">
+            <div class="apply-input-group">
+                <label class="apply-label" for="postcode">Postcode: </label>
+                <input class="apply-input" type="text" id="postcode" name="postcode" pattern="\d{4}" required>
+            </div>
+            <div class="apply-input-group">
+                <label class="apply-label" for="state">State: </label>
+                <select class="apply-input" id="state" name="state" required>
+                    <option value="">Please Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </div>
+        </div>
 
-          <label class="apply-label" for="suburb">Suburb/Town:</label>
-          <input class="apply-input" type="text" name="suburb" id="suburb" placeholder="Suburb/Town" required>
+        <!-- Contact -->
+        <div class="apply-row">
+            <div class="apply-input-group">
+                <label class="apply-label" for="email">Email: </label>
+                <input class="apply-input" type="email" id="email" name="email" placeholder="e.g. ex@example.com" required>
+            </div>
+            <div class="apply-input-group">
+                <label class="apply-label" for="phone_number">Phone Number: </label>
+                <input class="apply-input" type="text" id="phone_number" name="phone_number" pattern="[0-9\s]{8,12}" required>
+            </div>
+        </div>
 
-          <label class="apply-label" for="postcode">Postcode:</label>
-          <input class="apply-input" type="text" name="postcode" id="postcode" placeholder="Postcode" pattern="\d{4}" required>
-
-          <label class="apply-label" for="state">State:</label>
-          <select class="apply-input" name="state" id="state" required>
-            <option value="">State</option>
-            <option value="VIC">VIC</option>
-            <option value="NSW">NSW</option>
-            <option value="QLD">QLD</option>
-            <option value="NT">NT</option>
-            <option value="WA">WA</option>
-            <option value="SA">SA</option>
-            <option value="TAS">TAS</option>
-            <option value="ACT">ACT</option>
-          </select>
-
-          <!-- Skills fieldset -->
-          <fieldset class="apply-fieldset">
+        <!-- Skills -->
+        <fieldset class="apply-fieldset">
             <legend>Required Technical Skills</legend>
-            <label for="skill-html"><input type="checkbox" id="skill-html" name="skill" value="1" checked> HTML</label>
-            <label for="skill-css"><input type="checkbox" id="skill-css" name="skill" value="2"> CSS</label>
-            <br>
-            <label for="skill-js"><input type="checkbox" id="skill-js" name="skill" value="3"> JavaScript</label>
-            <label for="skill-debug"><input type="checkbox" id="skill-debug" name="skill" value="4"> Debugging</label>
-          </fieldset><br>
+            <input class="apply-tech-input" type="checkbox" name="RTL" id="HTML" checked="checked">
+            <label class="apply-tech-label" for="HTML">HTML</label>
+            <input class="apply-tech-input" type="checkbox" name="RTL" id="CSS">
+            <label class="apply-tech-label" for="CSS">CSS</label>
+            <input class="apply-tech-input" type="checkbox" name="RTL" id="JavaScript">
+            <label class="apply-tech-label" for="JavaScript">JavaScript</label>
+            <input class="apply-tech-input" type="checkbox" name="RTL" id="Debugging">
+            <label class="apply-tech-label" for="Debugging">Debugging</label>
+        </fieldset>
 
-          <!-- Other Skills -->
-          <label class="apply-label" for="other-skills">Other Skills:</label><br>
-          <textarea class="apply-input" id="other-skills" name="other-skills" rows="5" placeholder="List additional skills..."></textarea><br><br>
-        </div>
+        <!-- Other Skills -->
+        <label class="apply-label" for="other-skills">Other Skills:</label>
+        <textarea class="apply-input" name="other-skills" id="other-skills" rows="5" placeholder="List additional skills..."></textarea><br><br>
 
-        <!-- Submit and Reset -->
+        <!-- Buttons -->
         <div class="ButtonHolder">
-          <input class="BigRedButton" type="submit" value="Apply">
-          <input class="BigRedButton" type="reset" value="Reset">
+            <input class="BigRedButton" type="submit" value="Apply">
+            <input class="BigRedButton" type="reset" value="Reset">
         </div>
-        </section>
-        </form>        
-      </div>
+        </form>
+    </div>
     </section>
-  </article>
+</article>
 
   <!-- Footer with Jira and business contact info -->
   <footer>
