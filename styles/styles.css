@@ -1,6 +1,19 @@
 /* ============================== */
+/* OVERACHIEVING UNDERACHIEVERS  */
+/* COS10026 – Group Website CSS  */
+/* ============================== */
+/* 
+   Authored by: Nathaniel Kiremitciyan, Krish Sheemar, Harry Webb, Aiden Stott
+   Final structure, responsive layout, and comments created with the assistance of ChatGPT
+   Generated prompts included: “Create a responsive CSS layout with flex-based sectioning, 
+   form input styling, floating sidebars, and hover-enhanced tables.” 
+   Compliant with HTML5 + CSS3 validation (April 2025)
+*/
+
+/* ============================== */
 /* GLOBAL STYLES + PAGE RESET     */
 /* ============================== */
+
 /* This might work */
 
 /* Apply universal box-sizing, font, and text color */
@@ -14,7 +27,10 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url('Images/bg.png');
+    background-image: url('Images/bg.png'); 
+/* This background was generated using OpenAI’s DALL·E image model. */
+/* Prompt used: “Generate a background gradient transitioning from #384959 to a much lighter blue.” */
+/* Generated and integrated with assistance from ChatGPT. */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -185,6 +201,11 @@ section {
     height: auto;
     object-fit: contain;
     margin: 0 auto;
+}
+
+.ApplyDiv {
+    padding: 20px;
+    width: 100%;
 }
 
 /* ============================== */
@@ -460,3 +481,9 @@ figure img {
 .table-container td:hover {
     background-color: #546478;
 }
+/* ============================== */
+/* FILE END                       */
+/* ============================== */
+/* CSS validated via W3C checker */
+/* Structure built and tested using VSCode + Chrome DevTools */
+/* Logo and some visuals created using DALL·E (prompted via ChatGPT) */
