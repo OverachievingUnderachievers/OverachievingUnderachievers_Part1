@@ -1,5 +1,5 @@
 <!-- HTML revised, validated, and commented in collaboration with ChatGPT -->
- <!-- All image prompts and table content assisted/generated via ChatGPT -->
+<!-- All image prompts and table content assisted/generated via ChatGPT -->
 <!-- Original author: Nathan Kiremitciyan -->
 
 <!DOCTYPE html>

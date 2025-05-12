@@ -1,4 +1,5 @@
 <!-- HTML revised and structurally enhanced with the assistance of ChatGPT -->
+<!-- Original author: Nathan Kiremitciyan -->
 
 <!DOCTYPE html>
 <html lang="en">
