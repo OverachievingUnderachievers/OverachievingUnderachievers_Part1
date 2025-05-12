@@ -19,7 +19,7 @@ function isCurrentPage($page) {
     <nav class="NavRight">
     <!-- Secondary Navigation for Careers -->
         <a class="NonActive">Careers:</a>
-        <a href="job_descriptions.php" class="<?php echo isCurrentPage('jobs.php'); ?>">Job Descriptions</a>
+        <a href="jobs.php" class="<?php echo isCurrentPage('jobs.php'); ?>">Job Descriptions</a>
         <a href="apply.php" class="<?php echo isCurrentPage('apply.php'); ?>">Job Application</a>
     </nav>
 </header>
