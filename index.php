@@ -84,7 +84,7 @@
             </div>
             <div class="RightAlignDiv">
                 <div class="ButtonHolder">
-                    <a href="Plans.html" class="BigRedButton">Get Started Now!</a>
+                    <a href="plans.html" class="BigRedButton">Get Started Now!</a>
                 </div>
             </div>
         </section>
