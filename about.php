@@ -139,15 +139,15 @@
                 <dt>Nathaniel</dt>
                 <dd><br>Built the index and plans page as well as preventing the site from becoming too professional
                 <br>Also worked on Tasks 1,2,6 and 8 for Part2<br></dd>
-                <dt>Harry</dt>
+                <dt><br>Harry</dt>
                 <dd><br>Crafted the job application page and helped ground our vision in reality
-                <br>Also worked on Task 5 for Part2><br></dd>
-                <dt>Krish</dt>
+                <br>Also worked on Task 5 for Part2<br></dd>
+                <dt<br>>Krish</dt>
                 <dd><br>Assembled job descriptions and sprinkled in the corporate tone
-                <br>Also worked on Task 7 for Part2><br></dd>
-                <dt>Aiden</dt>
+                <br>Also worked on Task 7 for Part2<br></dd>
+                <dt><br>Aiden</dt>
                 <dd><br>Wrote the about page, formatted it with love, and added just the right amount of chaos
-                <br>Also worked on Tasks 3 and 4 for Part2><br></dd>
+                <br>Also worked on Tasks 3 and 4 for Part2<br></dd>
               </dl>
             </div>
             <div class="RightAlignDiv">
