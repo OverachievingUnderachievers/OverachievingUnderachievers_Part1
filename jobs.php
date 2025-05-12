@@ -15,22 +15,8 @@
   <title>Job Descriptions – Overachieving Underachievers</title>
 </head>
 <body>
-
-  <!-- Header with site-wide nav; reused DALL·E logo and nav structure created with GPT guidance -->
-  <header>
-    <img src="images/TOULogo2.png" alt="Logo">
-    <nav>
-        <a class="NonActive">OVERACHIEVING UNDERACHIEVERS</a>
-        <a href="index.html">Home</a>
-        <a href="plans.html">Plans</a>
-        <a href="about.html">About</a>
-    </nav>
-    <nav class="NavRight">
-        <a class="NonActive">Carrers:</a>
-        <a class="Current">Job Descriptions</a>
-        <a href="apply.html">Job Application</a>
-    </nav>
-</header>
+<!-- Header inclusion for redundancy and modularity -->
+<?php include 'header.inc'; ?>
 
   <!-- Cloud Engineer Listing -->
   <article class="NoImageArticle">
@@ -202,21 +188,7 @@
     </div>
     </section>
   </article>
-  
-
-  <!-- Footer shared across site with contact info and Jira -->
-  <footer>
-    <div class="ContactInfo">
-        <div><strong>Email:</strong><a class="Link" href="mailto:support@overachievingunderachievers.biz"> support@overachievingunderachievers.biz</a></div>
-        <div><strong>Phone:</strong> +1 (800) 867-5309</div>
-        <div><strong>Fax:</strong> lol no.</div>
-        <div><strong>Address:</strong> 404 Productivity Blvd, Suite 0, Hustleville, NY 10000</div>
-        <div><strong>Hours:</strong> Mon–Fri, 11:00 AM – 2:00 PM (we try)</div>
-        <div><strong>Jira:</strong><a class="Link" target="_blank" href="https://overachievingunderachievers.atlassian.net/"> overachievingunderachievers.atlassian.net</a></div>
-    </div>
-    <div class="TailLine">
-        <p>&copy; 2025 Overachieving Underachievers. All rights reserved.</p>
-    </div>
-</footer> 
+<!-- Footer inclusion for redundancy and modularity -->
+  <?php include 'footer.inc';?>
 </body>
 </html>

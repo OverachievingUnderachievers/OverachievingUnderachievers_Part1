@@ -13,7 +13,6 @@
   <title>Job Application – Overachieving Underachievers</title>
 </head>
 <body>
-
   <!-- Header with navigation bar and logo -->
   <header>
     <!-- DALL·E logo reused site-wide -->
