@@ -1,5 +1,5 @@
 <!-- Page restructured and co-authored with ChatGPT -->
-<!-- HTML layout was adapted from index.html using consistent tags and styles -->
+<!-- HTML layout was adapted from index.php using consistent tags and styles -->
 <!-- All image prompts and table content assisted/generated via ChatGPT -->
 <!-- Original author: Aiden Stott -->
 

@@ -21,7 +21,7 @@
     <article class="NoImageArticle">
 
         <!-- Intro Section: Title and Description -->
-        <!-- This section was co-written with ChatGPT to match tone and structure from index.html -->
+        <!-- This section was co-written with ChatGPT to match tone and structure from index.php -->
         <section>
             <div class="LeftAlignDiv">
                 <h1>Choose Your Plan</h1>

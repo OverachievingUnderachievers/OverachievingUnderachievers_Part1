@@ -1,5 +1,5 @@
 <!-- Page restructured and content-assisted by ChatGPT -->
-<!-- Job descriptions, structure, aside layout, and styling generated using prompts based on index.html -->
+<!-- Job descriptions, structure, aside layout, and styling generated using prompts based on index.php -->
 <!-- Original author: Krish Sheemar -->
 
 <!DOCTYPE html>
@@ -99,7 +99,7 @@
     </section>
     <section>
       <div class="RightAlignDiv">
-        <div class="ButtonHolder"><a href="apply.html" class="BigRedButton">Apply Now!</a></div>
+        <div class="ButtonHolder"><a href="apply.php" class="BigRedButton">Apply Now!</a></div>
     </div>
     </section>
   </article>
@@ -185,7 +185,7 @@
     </section>
     <section>
       <div>
-        <div class="ButtonHolder"><a href="apply.html" class="BigRedButton">Apply Now!</a></div>
+        <div class="ButtonHolder"><a href="apply.php" class="BigRedButton">Apply Now!</a></div>
     </div>
     </section>
   </article>
