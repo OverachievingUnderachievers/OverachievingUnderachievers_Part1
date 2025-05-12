@@ -14,24 +14,8 @@
 </head>
 <body>
 
-    <!-- Site Header with Navigation -->
-    <header>
-        <!-- Logo previously generated with OpenAI's DALL·E (April 2025) for branding consistency -->
-        <img src="images/TOULogo2.png" alt="Logo">
-        <nav>
-            <!-- Primary Navigation -->
-            <a class="NonActive">OVERACHIEVING UNDERACHIEVERS</a>
-            <a href="index.html">Home</a>
-            <a class="Current">Plans</a>
-            <a href="about.html">About</a>
-        </nav>
-        <nav class="NavRight">
-            <!-- Secondary Navigation for Careers -->
-            <a class="NonActive">Carrers:</a>
-            <a href="jobs.html">Job Descriptions</a>
-            <a href="apply.html">Job Application</a>
-        </nav>
-    </header>
+    <!-- Header inclusion for redundancy and modularity -->
+    <?php include 'header.inc'; ?>
 
     <!-- Main Content Area -->
     <article class="NoImageArticle">
@@ -96,8 +80,8 @@
         </section>
     </article>
 
-<!-- Footer inclusion for redundancy and modularity -->
-<?php include 'footer.inc';?>
+    <!-- Footer inclusion for redundancy and modularity -->
+    <?php include 'footer.inc';?>
 
 </body>
 </html>

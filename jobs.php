@@ -15,6 +15,7 @@
   <title>Job Descriptions – Overachieving Underachievers</title>
 </head>
 <body>
+
 <!-- Header inclusion for redundancy and modularity -->
 <?php include 'header.inc'; ?>
 
@@ -188,7 +189,9 @@
     </div>
     </section>
   </article>
-<!-- Footer inclusion for redundancy and modularity -->
+
+  <!-- Footer inclusion for redundancy and modularity -->
   <?php include 'footer.inc';?>
+
 </body>
 </html>
