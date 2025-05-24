@@ -1,7 +1,3 @@
-<!-- Page restructured and content-assisted by ChatGPT -->
-<!-- Job descriptions, structure, aside layout, and styling generated using prompts based on index.php -->
-<!-- Original author: Krish Sheemar -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,189 +5,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Job Descriptions for roles at Overachieving Underachievers">
   <meta name="author" content="Krish Sheemar">
-  <meta name="keywords" content="CSS, Job Description, Cloud Engineer, Software Developer">
+  <meta name="keywords" content="Job, PHP, MySQL, Dynamic Jobs">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <title>Job Descriptions – Overachieving Underachievers</title>
 </head>
 <body>
 
-<!-- Header inclusion for redundancy and modularity -->
 <?php include 'header.inc'; ?>
+<?php require_once 'settings.php'; ?>
 
-  <!-- Cloud Engineer Listing -->
-  <article class="NoImageArticle">
-    <section>
-      <div class="LeftAlignDiv">
-        <h1>Cloud Engineer</h1>
-        <p class="Tagline">At Overachieving Underachievers, anything is achievable</p>
-        <p><strong>Position Reference:</strong> CE451</p>
-        <p><strong>Location:</strong> Hawthorn, Melbourne</p>
-        <p><strong>Salary:</strong> $100,000 - $110,000 per year</p>
-        <p><strong>Reports to:</strong> Senior DevOps Manager</p>
-      </div>
-      <aside class="RightAlignDiv">
-        <h2>Quick Facts</h2>
-        <ul>
-          <li><strong>Position Type:</strong> Full Time</li>
-          <li><strong>Office:</strong> Advanced Technologies Centre</li>
-          <li><strong>Work Mode:</strong> Hybrid</li>
-          <li><strong>Start Date:</strong> ASAP</li>
-        </ul>
-        <!-- Placeholder company image reused from branding set -->
-        <img src="images/TOULogo.png" alt="Company Logo" style="max-width: 200px; display: block; margin: 10px auto;">
-      </aside>
-    </section>
-  
-    <section>
-      <div class="LeftAlignDiv">
-        <h2>About the Role</h2>
-        <p>
-          We are looking for a motivated <strong>Cloud Engineer</strong> to join our infrastructure team. You’ll design and manage scalable, secure cloud-based environments across AWS and Azure, support DevOps pipelines, and contribute to automation initiatives.
-        </p>
-      </div>
-      <div class="RightAlignDiv">
-        <h2>About the Company</h2>
-        <p>
-          Overachieving Underachievers is a global leader in next-generation digital services and consulting. With clients in over 50 countries, we deliver solutions in cybersecurity, automation, cloud platforms, and digital transformation.
-        </p>
-      </div>
-    </section>
-  
-    <section>
-      <div class="LeftAlignDiv">
-        <h2>Key Responsibilities</h2>
-        <ol>
-          <li>Design, deploy, and maintain cloud infrastructure (AWS/Azure)</li>
-          <li>Implement CI/CD pipelines and automation tools</li>
-          <li>Ensure infrastructure compliance and security best practices</li>
-          <li>Monitor system performance and troubleshoot incidents</li>
-          <li>Collaborate with cross-functional teams to integrate cloud systems</li>
-        </ol>
-      </div>
-      <div class="RightAlignDiv">
-        <h2>Reporting Structure</h2>
-        <p>You will report directly to the <strong>Senior DevOps Manager</strong> and work alongside a small team of platform engineers, developers, and analysts.</p>
-      </div>
-    </section>
-  
-    <section>
-      <div class="LeftAlignDiv">
-        <h2>Essential Qualifications and Skills</h2>
-        <ul>
-          <li>Bachelor’s degree in Computer Science or related field</li>
-          <li>1–3 years of experience in cloud engineering (AWS, Azure, or GCP)</li>
-          <li>Proficiency in scripting (Python, Bash, or PowerShell)</li>
-          <li>Understanding of networking protocols and cloud security</li>
-          <li>Experience with infrastructure-as-code (Terraform, CloudFormation)</li>
-        </ul>
-      </div>
-      <div class="RightAlignDiv">
-        <h2>Preferable Attributes</h2>
-        <ul>
-          <li>Experience with container orchestration (e.g., Kubernetes)</li>
-          <li>Certifications (AWS Certified Solutions Architect, AZ-104)</li>
-          <li>Familiarity with Linux administration and CI/CD systems</li>
-          <li>Strong analytical and problem-solving skills</li>
-          <li>Good communication and team collaboration abilities</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div class="RightAlignDiv">
-        <div class="ButtonHolder"><a href="apply.php" class="BigRedButton">Apply Now!</a></div>
-    </div>
-    </section>
-  </article>
+<?php
+$query = "SELECT * FROM jobs";
+$result = mysqli_query($conn, $query);
 
-  <!-- Software Developer Listing -->
-  <article class="NoImageArticle">
-    <section>
-      <div class="LeftAlignDiv">
-        <h1>Software Developer</h1>
-        <p class="Tagline">Empowering lazy innovation at Overachieving Underachievers</p>
-        <p><strong>Position Reference:</strong> SD302</p>
-        <p><strong>Location:</strong> Hawthorn, Melbourne</p>
-        <p><strong>Salary:</strong> $90,000 - $105,000 per year</p>
-        <p><strong>Reports to:</strong> Lead Software Architect</p>
-      </div>
-      <aside class="RightAlignDiv">
-        <h2>Quick Facts</h2>
-        <ul>
-          <li><strong>Position Type:</strong> Full Time</li>
-          <li><strong>Office:</strong> Innovation & Code Centre</li>
-          <li><strong>Work Mode:</strong> Hybrid/Flexible</li>
-          <li><strong>Start Date:</strong> Negotiable</li>
-        </ul>
-        <!-- Same branding image reused to visually anchor content -->
-        <img src="images/TOULogo.png" alt="Company Logo" style="max-width: 200px; display: block; margin: 10px auto;">
-      </aside>
-    </section>
-  
-    <section>
-      <div class="LeftAlignDiv">
-        <h2>About the Role</h2>
-        <p>
-          We’re on the lookout for a capable and creative <strong>Software Developer</strong> to help us build and maintain clean, efficient, and scalable codebases.
-          You’ll work on client-facing web applications and internal tools, contributing to the ongoing growth of our digital service platforms.
-        </p>
-      </div>
-      <div class="RightAlignDiv">
-        <h2>About the Company</h2>
-        <p>
-          Overachieving Underachievers is a globally recognized provider of effortless solutions, combining sarcasm with scalable tech. Our software team drives products for startups and major enterprises alike, all while trying not to break a sweat.
-        </p>
-      </div>
-    </section>
-  
-    <section>
-      <div class="LeftAlignDiv">
-        <h2>Key Responsibilities</h2>
-        <ol>
-          <li>Develop clean, efficient, and maintainable code</li>
-          <li>Participate in sprint planning and agile ceremonies</li>
-          <li>Write and maintain unit and integration tests</li>
-          <li>Collaborate with UX/UI designers and backend teams</li>
-          <li>Maintain documentation for projects and APIs</li>
-        </ol>
-      </div>
-      <div class="RightAlignDiv">
-        <h2>Reporting Structure</h2>
-        <p>You will report to the <strong>Lead Software Architect</strong> and work with product managers, QA engineers, and DevOps staff in a multidisciplinary team.</p>
-      </div>
-    </section>
-  
-    <section>
-      <div class="LeftAlignDiv">
-        <h2>Essential Qualifications and Skills</h2>
-        <ul>
-          <li>Bachelor’s degree in Software Engineering, IT, or similar</li>
-          <li>2+ years experience in software development roles</li>
-          <li>Proficiency in JavaScript and at least one backend language (Node.js, Python, Ruby)</li>
-          <li>Experience with Git, APIs, and frontend frameworks like React or Vue</li>
-          <li>Understanding of modern development workflows (CI/CD, Agile)</li>
-        </ul>
-      </div>
-      <div class="RightAlignDiv">
-        <h2>Preferable Attributes</h2>
-        <ul>
-          <li>Experience working with cloud environments (AWS, Firebase)</li>
-          <li>Knowledge of TypeScript, Docker, or serverless architecture</li>
-          <li>Good communication skills and a love for clean documentation</li>
-          <li>Exposure to testing frameworks (Jest, Mocha, Cypress)</li>
-          <li>An appreciation for memes and mild existential dread</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div>
-        <div class="ButtonHolder"><a href="apply.php" class="BigRedButton">Apply Now!</a></div>
-    </div>
-    </section>
-  </article>
+if ($result && mysqli_num_rows($result) > 0) {
+  while ($job = mysqli_fetch_assoc($result)) {
+    echo "<article class='NoImageArticle'>";
 
-  <!-- Footer inclusion for redundancy and modularity -->
-  <?php include 'footer.inc';?>
+    // Section 1 - Overview
+    echo "<section>
+            <div class='LeftAlignDiv'>
+              <h1>{$job['JobTitle']}</h1>
+              <p class='Tagline'>At Overachieving Underachievers, anything is achievable</p>
+              <p><strong>Position Reference:</strong> {$job['JobRef']}</p>
+              <p><strong>Location:</strong> {$job['Location']}</p>
+              <p><strong>Salary:</strong> {$job['SalaryRange']}</p>
+              <p><strong>Reports to:</strong> {$job['ReportsTo']}</p>
+            </div>
+            <aside class='RightAlignDiv'>
+              <h2>Quick Facts</h2>
+              <ul>
+                <li><strong>Position Type:</strong> {$job['PositionType']}</li>
+                <li><strong>Office:</strong> {$job['Office']}</li>
+                <li><strong>Work Mode:</strong> {$job['WorkMode']}</li>
+                <li><strong>Start Date:</strong> {$job['StartDate']}</li>
+              </ul>
+              <img src='images/TOULogo.png' alt='Company Logo' style='max-width: 200px; display: block; margin: 10px auto;'>
+            </aside>
+          </section>";
 
+    // Section 2 - Role & Company
+    echo "<section>
+            <div class='LeftAlignDiv'>
+              <h2>About the Role</h2>
+              <p>{$job['Description']}</p>
+            </div>
+            <div class='RightAlignDiv'>
+              <h2>About the Company</h2>
+              <p>{$job['CompanyInfo']}</p>
+            </div>
+          </section>";
+
+    // Section 3 - Responsibilities & Structure
+    echo "<section>
+            <div class='LeftAlignDiv'>
+              <h2>Key Responsibilities</h2>
+              <ol>";
+
+    // Print responsibilities as list items (if they are delimited)
+    $responsibilities = explode("\n", $job['Responsibilities']);
+    foreach ($responsibilities as $item) {
+      if (trim($item) !== '') {
+        echo "<li>" . htmlspecialchars($item) . "</li>";
+      }
+    }
+
+    echo "  </ol>
+            </div>
+            <div class='RightAlignDiv'>
+              <h2>Reporting Structure</h2>
+              <p>{$job['ReportingStructure']}</p>
+            </div>
+          </section>";
+
+    // Section 4 - Skills
+    echo "<section>
+            <div class='LeftAlignDiv'>
+              <h2>Essential Qualifications and Skills</h2>
+              <ul>";
+
+    $essentials = explode("\n", $job['EssentialSkills']);
+    foreach ($essentials as $item) {
+      if (trim($item) !== '') {
+        echo "<li>" . htmlspecialchars($item) . "</li>";
+      }
+    }
+
+    echo "  </ul>
+            </div>
+            <div class='RightAlignDiv'>
+              <h2>Preferable Attributes</h2>
+              <ul>";
+
+    $preferred = explode("\n", $job['PreferredAttributes']);
+    foreach ($preferred as $item) {
+      if (trim($item) !== '') {
+        echo "<li>" . htmlspecialchars($item) . "</li>";
+      }
+    }
+
+    echo "  </ul>
+            </div>
+          </section>";
+
+    // Section 5 - Apply Button
+    echo "<section>
+            <div class='RightAlignDiv'>
+              <div class='ButtonHolder'><a href='apply.php' class='BigRedButton'>Apply Now!</a></div>
+            </div>
+          </section>";
+
+    echo "</article>";
+  }
+} else {
+  echo "<p>No job listings found.</p>";
+}
+
+mysqli_close($conn);
+?>
+
+<?php include 'footer.inc'; ?>
 </body>
 </html>

@@ -162,6 +162,8 @@ article {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Push article up slightly if no image is present */
@@ -481,6 +483,22 @@ figure img {
 .table-container td:hover {
     background-color: #546478;
 }
+.eoi-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
+
+.eoi-table th, .eoi-table td {
+    padding: 6px 10px;
+    text-align: left;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 /* ============================== */
 /* FILE END                       */
 /* ============================== */
