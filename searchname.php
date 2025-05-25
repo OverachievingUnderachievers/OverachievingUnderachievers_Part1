@@ -34,7 +34,7 @@ if (!isset($_SESSION["admin"])) {
             if (!$conn) {
                 echo "<p>Connection to Database Failed</p>";
             } else {
-                $eoi_table = "EOI";
+                $eoi_table = "eoi";
                 $name_count = [];
                 $and_or = "OR";
 
