@@ -78,7 +78,7 @@ if (!isset($_SESSION["admin"])) {
     
                     while ($row = mysqli_fetch_assoc($data)) {
                         echo "<tr>
-                            <td>{$row['EOINumber']}</td>
+                            <td>{$row['EOInumber']}</td>
                             <td>{$row['JobReferenceNumber']}</td>
                             <td>{$row['FirstName']}</td>
                             <td>{$row['LastName']}</td>
