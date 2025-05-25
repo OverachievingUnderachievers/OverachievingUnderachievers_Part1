@@ -33,7 +33,7 @@ if (!isset($_SESSION["admin"])) {
             if (!$conn) {
                 echo "<p>Connection to Database Failed</p>";
             } else {
-                $eoi_table = "EOI";
+                $eoi_table = "eoi";
 
 
                 if (isset ($_POST ["ref_number"])) {
