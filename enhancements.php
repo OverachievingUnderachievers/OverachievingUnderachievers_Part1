@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit();
     } else {
         $error = "❌ Invalid username or password.";
+        header("Location: index.php");
     }
-
     mysqli_close($conn);
 }
 ?>

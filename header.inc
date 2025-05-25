@@ -19,6 +19,6 @@ function isCurrentPage($page) {
     </nav>
     <nav class="NavRight">
     <!-- Secondary Navigation for Login -->
-        <a href="manage.php" class="<?php echo isCurrentPage('enhancements.php'); ?>">Intranet</a>
+        <a href="enhancements.php" class="<?php echo isCurrentPage('enhancements.php'); ?>">Intranet</a>
     </nav>
 </header>
