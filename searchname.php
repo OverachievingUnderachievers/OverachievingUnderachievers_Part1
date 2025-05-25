@@ -29,8 +29,6 @@ if (!isset($_SESSION["admin"])) {
         <?php
             require_once ("settings.php");    
     
-            $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
-    
             if (!$conn) {
                 echo "<p>Connection to Database Failed</p>";
             } else {
