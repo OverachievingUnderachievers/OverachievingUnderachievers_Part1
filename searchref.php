@@ -10,6 +10,9 @@ if (!isset($_SESSION["admin"])) {
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sort EOIs By Ref">
+    <meta name="author" content="Harry Webb">
     <title>Sort By Reference No.</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
