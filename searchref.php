@@ -35,7 +35,7 @@ if (!isset($_SESSION["admin"])) {
                 if (isset($_POST['search_ref']) && !empty(trim($_POST['search_ref']))) {
                     $search_ref = mysqli_real_escape_string($conn, trim($_POST['search_ref']));
 
-                $query = "SELECT * FROM $eoi_table WHERE JobRefNumber = '$search_ref'";
+                $query = "SELECT * FROM $eoi_table WHERE JobReferenceNumber = '$search_ref'";
     
                 $data = mysqli_query($conn, $query);
                 
