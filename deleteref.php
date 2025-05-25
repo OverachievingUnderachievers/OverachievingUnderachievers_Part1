@@ -36,7 +36,7 @@ if (!isset($_SESSION["admin"])) {
                 if (isset($_POST['delete_ref'])) {
                     $delete_ref = $_POST['delete_ref'];
 
-                $query = "DELETE FROM $eoi_table WHERE JobRefNumber = '$delete_ref'";
+                $query = "DELETE FROM $eoi_table WHERE JobReferenceNumber = '$delete_ref'";
     
                 $data = mysqli_query($conn, $query);
                 
