@@ -46,7 +46,7 @@ if (!isset($_SESSION["admin"])) {
                     $Status = $_POST ["status"];
                 }
     
-                $query = "UPDATE $eoi_table SET Status = '{$Status}' WHERE JobRefNumber = '{$jobrefnumber}'";
+                $query = "UPDATE $eoi_table SET Status = '{$Status}' WHERE JobReferenceNumber = '{$jobrefnumber}'";
     
                 $data = mysqli_query($conn, $query);
     
