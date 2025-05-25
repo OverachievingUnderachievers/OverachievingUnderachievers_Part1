@@ -32,7 +32,7 @@ if (!isset($_SESSION["admin"])) {
             if (!$conn) {
                 echo "<p>Connection to Database Failed</p>";
             } else {
-                $eoi_table = "EOI";
+                $eoi_table = "eoi";
 
                 if (isset($_POST['search_ref']) && !empty(trim($_POST['search_ref']))) {
                     $search_ref = mysqli_real_escape_string($conn, trim($_POST['search_ref']));
