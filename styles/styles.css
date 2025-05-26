@@ -336,7 +336,7 @@ footer section {
 /* FORM + INPUT STYLING          */
 /* ============================== */
 
-/* General input styles */
+/* Base input styling */
 .apply-input {
     width: 200px;
     padding: 8px;
@@ -344,54 +344,103 @@ footer section {
     border-radius: 5px;
     background-color: #fafafa;
     color: #0b2e33;
-    border: none;
+    border: none; 
+    margin-right: 40px;
+    accent-color: #FFD700;
+}
+
+/* Name input wrapper */
+.apply-input-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Name inputs */
+.apply-input-name input {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Name labels */
+.apply-input-name label {
+    margin-bottom: 2px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: lightgrey;
+}
+
+/* Input group wrapper */
+.apply-input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Input fields in group */
+.apply-input-group input {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Input group labels */
+.apply-input-group label {
+    margin-top: 4px;
     margin-bottom: 10px;
 }
 
-/* Dropdown option styling */
-option {
-    color: #384959;
-}
-
+/* Placeholder text color */
 .apply-input::placeholder {
-    color: #999;
+    color: black;
 }
 
-/* Textarea adjustments */
+/* Textarea input */
 textarea.apply-input {
     width: 100%;
     height: 100px;
     resize: vertical;
 }
 
-/* Form label styling */
+/* Section labels */
 .apply-label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 10px 0 8px;
     font-weight: bold;
     color: #fafafa;
 }
 
-/* Fieldset for grouped form elements */
+/* Fieldset container */
 .apply-fieldset {
     padding: 10px 15px;
     border: 1px solid #fafafa;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    accent-color: #FFD700;
 }
 
-/* Legend inside fieldset */
+/* Fieldset title */
+.apply-fieldset legend {
+    font-weight: bold;
+}
+
+/* Fieldset label spacing */
+.apply-fieldset label {
+    padding-right: 40px;
+}
+
 .apply-fieldset legend {
     font-weight: bold;
     color: #FFD700;
 }
 
-/* Grouped input rows */
+/* Row layout */
 .apply-row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 input[type="radio"],
