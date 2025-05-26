@@ -32,11 +32,11 @@
       <span class="apply-label">Name: </span>
       <div class="apply-row">
         <div class="apply-input-name" id="apply-names">
-          <input class="apply-input" type="text" id="FirstName" name="FirstName" pattern="{0,20}[A-Za-z]" placeholder="e.g. Steven" required>
+          <input class="apply-input" type="text" id="FirstName" name="FirstName" pattern="[A-Za-z]{1,20}" placeholder="e.g. Steven" required>
           <label for="FirstName">First Name</label>
         </div>
         <div class="apply-input-name">
-          <input class="apply-input" type="text" id="LastName" name="LastName" pattern="{0,20}[A-Za-z]" placeholder="e.g. Smith" required>
+          <input class="apply-input" type="text" id="LastName" name="LastName" pattern="[A-Za-z]{1,20}" placeholder="e.g. Smith" required>
           <label for="LastName">Last Name</label>
         </div>
       </div>
