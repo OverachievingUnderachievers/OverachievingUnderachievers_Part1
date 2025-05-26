@@ -85,7 +85,7 @@ if (!isset($_SESSION["admin"])) {
         require_once("settings.php");
         // Function to print a SQL result as a HTML table
         function print_table($result) {
-        $display_columns = ['EOInumber', 'JobReferenceNumber', 'FirstName', 'LastName', 'Status'];
+        $display_columns = ['EOInumber', 'JobReferenceNumber', 'FirstName', 'LastName', "Skill1", "Skill2","PhoneNumber", 'Status'];
         echo "<table class='eoi-table' border='1'><tr>";
         foreach ($display_columns as $col) {
             echo "<th>{$col}</th>";
