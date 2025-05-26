@@ -44,7 +44,7 @@ if (!isset($_SESSION["admin"])) {
         <fieldset class="apply-fieldset">
             <legend>Search By Ref No.</legend>
             <label class="apply-label" for="search_ref">Job Reference No.</label>
-            <input class="apply-input" type="text" name="search_ref" id="search_ref"><br><br>
+            <input class="apply-input" type="text" name="search_ref" id="search_ref" required><br><br>
             <input class="BigRedButton" type="submit" value="Search">
         </fieldset>
     </form>
@@ -55,7 +55,7 @@ if (!isset($_SESSION["admin"])) {
         <fieldset class="apply-fieldset">
             <legend>Delete By Ref No.</legend>
             <label class="apply-label" for="delete_ref">Job Reference No.</label>
-            <input class="apply-input" type="text" name="delete_ref" id="delete_ref"><br><br>
+            <input class="apply-input" type="text" name="delete_ref" id="delete_ref" required><br><br>
             <input class="BigRedButton" type="submit" value="Delete">
         </fieldset>
     </form>
@@ -64,7 +64,7 @@ if (!isset($_SESSION["admin"])) {
         <fieldset class="apply-fieldset">
             <legend>Change EOI Status</legend>
             <label class="apply-label" for="ref_number">Job Reference No.</label>
-            <input class="apply-input" type="text" name="ref_number" id="ref_number"><br>
+            <input class="apply-input" type="text" name="ref_number" id="ref_number" required><br>
             <label class="apply-label" for="status">Status</label>
             <select class="apply-input" name="status" id="status">
                 <option id="New" value="New">New</option>
