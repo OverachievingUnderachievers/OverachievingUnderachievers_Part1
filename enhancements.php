@@ -1,4 +1,5 @@
 <?php
+// This enhancement adds login functionality to the admin section of the website
 session_start();
 require_once("settings.php");
 
