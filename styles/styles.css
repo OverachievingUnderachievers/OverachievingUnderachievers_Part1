@@ -548,6 +548,17 @@ figure img {
     white-space: nowrap;
 }
 
+/*Handles error in the login page*/
+.manage-error {
+  background-color: #ffcccc;
+  color: #990000;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
 /* ============================== */
 /* FILE END                       */
 /* ============================== */

@@ -1,32 +1,32 @@
 <?php
 require_once("settings.php");
 
-// Redirect if not submitted via POST (direct access protection)
+// Redirect if not submitted via POST
 if ($_SERVER["REQUEST_METHOD"] !== "POST" || empty($_POST)) {
     header("Location: apply.php");
     exit();
 }
 
-// Helper function to sanitize input
+// Sanitize helper
 function clean_input($data) {
     return htmlspecialchars(stripslashes(trim($data)));
 }
 
-// Validate and sanitize fields
-$jobRef     = clean_input($_POST['JobReferenceNumber']);
-$firstName  = clean_input($_POST['FirstName']);
-$lastName   = clean_input($_POST['LastName']);
-$street     = clean_input($_POST['StreetAddress']);
-$suburb     = clean_input($_POST['SuburbTown']);
-$state      = clean_input($_POST['State']);
-$postcode   = clean_input($_POST['Postcode']);
-$email      = clean_input($_POST['EmailAddress']);
-$phone      = clean_input($_POST['PhoneNumber']);
-$skill1     = clean_input($_POST['Skill1']);
-$skill2     = clean_input($_POST['Skill2']);
+// Clean inputs
+$jobRef      = clean_input($_POST['JobReferenceNumber']);
+$firstName   = clean_input($_POST['FirstName']);
+$lastName    = clean_input($_POST['LastName']);
+$street      = clean_input($_POST['StreetAddress']);
+$suburb      = clean_input($_POST['SuburbTown']);
+$state       = clean_input($_POST['State']);
+$postcode    = clean_input($_POST['Postcode']);
+$email       = clean_input($_POST['EmailAddress']);
+$phone       = clean_input($_POST['PhoneNumber']);
+$skill1      = clean_input($_POST['Skill1']);
+$skill2      = clean_input($_POST['Skill2']);
 $otherSkills = clean_input($_POST['OtherSkills']);
 
-// Server-side validation
+// Validate inputs
 $errors = [];
 
 if (!preg_match("/^[A-Za-z]{1,20}$/", $firstName)) $errors[] = "First name must be 1–20 alphabetic characters.";
@@ -38,13 +38,29 @@ if (!preg_match("/^\d{4}$/", $postcode))           $errors[] = "Postcode must be
 if (!filter_var($email, FILTER_VALIDATE_EMAIL))    $errors[] = "Invalid email address.";
 if (!preg_match("/^[0-9\s]{8,12}$/", $phone))      $errors[] = "Phone must be 8–12 digits or spaces.";
 
-// Show error page if invalid
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EOI Submission Result</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<article class="NoImageArticle">
+  <section>
+    <div class="ApplyDiv">
+
+<?php
 if (!empty($errors)) {
-    echo "<h1>Submission Failed</h1><ul>";
+    echo "<h1>❌ Submission Failed</h1>";
+    echo "<ul class='manage-error'>";
     foreach ($errors as $e) {
         echo "<li>" . $e . "</li>";
     }
-    echo "</ul><p><a href='apply.php'>Go back and try again</a></p>";
+    echo "</ul>";
+    echo "<div class='ButtonHolder'><button class='BigRedButton' onclick='history.back()'>Go Back</button></div>";
     exit();
 }
 
@@ -68,27 +84,36 @@ CREATE TABLE IF NOT EXISTS eoi (
 )";
 mysqli_query($conn, $createTableSQL);
 
-// Insert into table
+// Insert data
 $insertSQL = "
 INSERT INTO eoi 
 (JobReferenceNumber, FirstName, LastName, StreetAddress, SuburbTown, State, Postcode, EmailAddress, PhoneNumber, Skill1, Skill2, OtherSkills) 
-VALUES 
-(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = mysqli_prepare($conn, $insertSQL);
 mysqli_stmt_bind_param($stmt, "ssssssssssss", 
     $jobRef, $firstName, $lastName, $street, $suburb, $state, $postcode, $email, $phone, $skill1, $skill2, $otherSkills);
 
 if (mysqli_stmt_execute($stmt)) {
-    $eoi_id = mysqli_insert_id($conn); // Get auto-generated ID
-    echo "<h1>Application Submitted Successfully</h1>";
+    $eoi_id = mysqli_insert_id($conn);
+    echo "<h1>✅ Application Submitted</h1>";
     echo "<p>Your EOI Number is: <strong>$eoi_id</strong></p>";
     echo "<p>Status: <strong>New</strong></p>";
-    echo "<p><a href='index.php'>Return to Home</a></p>";
+    echo "<div class='ButtonHolder'>
+            <a href='index.php' class='BigRedButton'>Return Home</a>
+          </div>";
 } else {
-    echo "<h1>❌ Error submitting application</h1>";
+    echo "<h1>❌ Error Submitting Application</h1>";
     echo "<p>" . mysqli_error($conn) . "</p>";
+    echo "<div class='ButtonHolder'><button class='BigRedButton' onclick='history.back()'>Try Again</button></div>";
 }
 
 mysqli_close($conn);
 ?>
+
+    </div>
+  </section>
+</article>
+
+</body>
+</html>
