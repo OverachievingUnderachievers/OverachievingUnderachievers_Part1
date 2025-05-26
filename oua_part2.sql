@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2025 at 02:43 PM
+-- Generation Time: May 26, 2025 at 01:46 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `oua_part2`
 --
+CREATE DATABASE IF NOT EXISTS `oua_part2` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `oua_part2`;
 
 -- --------------------------------------------------------
 
@@ -67,7 +69,10 @@ CREATE TABLE `eoi` (
 --
 
 INSERT INTO `eoi` (`EOInumber`, `JobReferenceNumber`, `FirstName`, `LastName`, `StreetAddress`, `SuburbTown`, `State`, `Postcode`, `EmailAddress`, `PhoneNumber`, `Skill1`, `Skill2`, `OtherSkills`, `Status`) VALUES
-(1, 'CE451', 'Nathan', 'Kiremitciyan', '64 Flinders Street Mentone', 'Mentone', 'VIC', '3194', 'dwarvenshark@gmail.com', '0491120770', 'CSS', 'JavaScript', 'People Skills', 'New');
+(1, 'CE451', 'Nathan', 'Kiremitciyan', '64 Flinders Street Mentone', 'Mentone', 'VIC', '3194', 'dwarvenshark@gmail.com', '0491120770', 'CSS', 'JavaScript', 'People Skills', 'In Progress'),
+(2, 'SD302', 'Steven', 'Smith', '123 Thames Promenade', 'Chelsea', 'QLD', '3196', 'ex@ex.com', '09031239992', 'HTML', 'CSS', 'gjarosdvlm', 'New'),
+(3, 'SD302', 'Nathan', 'Kiremitciyan', '64 Flinders Street Mentone', 'Mentone', 'VIC', '3194', 'dwarvenshark@gmail.com', '0491120770', 'HTML', 'CSS', 'gnua0djo', 'New'),
+(4, 'SD302', 'Nathan', 'Kiremitciyan', '64 Flinders Street Mentone', 'Mentone', 'VIC', '3194', 'dwarvenshark@gmail.com', '0491120770', 'HTML', 'HTML', 'ctyguhigucgv', 'New');
 
 -- --------------------------------------------------------
 
@@ -131,7 +136,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `eoi`
 --
 ALTER TABLE `eoi`
-  MODIFY `EOInumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `EOInumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
